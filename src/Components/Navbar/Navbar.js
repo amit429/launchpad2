@@ -42,16 +42,26 @@ export default function Navbar() {
         },
 
         {
-            name: "Team",
-            path: "/team"
+            name: "Resources",
+            path: "/resources"
+        },
+
+        {
+            name: "Contact",
+            path: "/contact"
         }
     ]
   return (
     <>
       <Box bg={useColorModeValue("whiteAlpha.300", "whiteAlpha.800")} px={4}
         style={{
-            boxShadow: "0 0 10px rgba(0,0,0,0.2)"
+            boxShadow: "0 0 10px rgba(0,0,0,0.2)",
+
+            "@media (max-width: 768px)": {
+                width: "100%",
+            },
         }}
+        width="100%"
       >
         <Flex h={20} alignItems={"center"} justifyContent={"space-between"}>
           <IconButton
@@ -63,7 +73,7 @@ export default function Navbar() {
           />
           <HStack spacing={8} alignItems={"center"}>
             <Box 
-                display={{ base: "none", md: "block" }}
+                display={{ md: "block" }}
                 style={{
                     cursor: "pointer",
                     justifyContent: "center",
@@ -92,7 +102,7 @@ export default function Navbar() {
                     _hover={{
                         textDecoration: "none",
                     }}
-                  p={5} to={link.path} key={link.name}>{link.name}</Link>
+                  p={5} fontSize={"lg"} to={link.path} key={link.name}>{link.name}</Link>
                 </Button>
                 
               ))}

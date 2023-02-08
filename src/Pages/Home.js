@@ -2,10 +2,11 @@ import React from "react";
 import {useEffect, useState} from "react";
 import { Text } from "@chakra-ui/react";
 import Loader from "../Components/Loading Screen/Loader";
+import Quote from "../Components/Home/Quote component/Quote";
   
 const Home = () => {
   
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
 
     const loadData = async () => {
 
@@ -16,19 +17,20 @@ const Home = () => {
     }
       
     useEffect(() => {    
-      loadData();
+      //loadData();
     }, [])
       
     if (loading) {
         return (
-            <Loader/>
+            <></>
         )
     }
       
     else {
         return (
             <>
-                <Text fontSize="40px">Home</Text>
+                <Quote />
+                
             </>
         )
     }

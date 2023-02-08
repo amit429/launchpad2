@@ -1,0 +1,92 @@
+import React from "react";
+import {
+  Button,
+  Flex,
+  Heading,
+  Image,
+  Stack,
+  Box,
+  Text,
+  useBreakpointValue,
+} from "@chakra-ui/react";
+import { useRef } from "react";
+import header_animation from "../../Assests/header_animation.json";
+import "./Header.css";
+import {
+  motion,
+  useScroll,
+  useTransform,
+} from "framer-motion";
+import "@fontsource/roboto";
+
+// function useParallax(value, distance) {
+//   return useTransform(value, [0, 1], [-distance, distance]);
+// }
+
+export default function Header() {
+
+  // const ref = useRef(null);
+  // const { scrollYProgress } = useScroll({ target: ref });
+  // const y = useParallax(scrollYProgress, 200);
+
+  return (
+    <>
+      <Stack
+        as={motion.div}
+        initial={{ opacity: 0, scale: 0 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          default: {
+            duration: 1,
+            ease: "easeInOut",
+          },
+          scale: {
+            type: "spring",
+            damping: 5,
+            stiffness: 100,
+            restDelta: 0.001
+          }
+        }}
+        minH={"80vh"}
+        direction={{ base: "column", md: "row" }}
+        style={{
+          padding: "2rem",
+        }}
+      >
+        <Flex>
+          <Box margin={"auto"}>
+            <iframe
+              className="animation"
+              src="https://embed.lottiefiles.com/animation/94515"
+            ></iframe>
+          </Box>
+        </Flex>
+        <Flex p={1} align={"center"} justify={"center"}>
+          <Stack spacing={6} w={"full"} maxW={"lg"}>
+            <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
+              <Text
+                as={"span"}
+                position={"relative"}
+                fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
+                textAlign={"center"}
+              >
+                LaunchPad
+              </Text>
+              <br />{" "}
+              <Text color={"blue.900"} as={"span"}>
+                Meet Startups
+              </Text>{" "}
+            </Heading>
+            <Text fontSize={{ base: "md", lg: "md" }} color={"gray.500"}>
+              LaunchPad is a platform for startups to connect with investors and
+              other startups. We provide a platform for startups to showcase
+              their ideas and get feedback from the community. We also provide a
+              platform for investors to connect with startups and invest in
+              them.
+            </Text>
+          </Stack>
+        </Flex>
+      </Stack>
+    </>
+  );
+}

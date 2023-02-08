@@ -3,6 +3,8 @@ import { ChakraProvider } from '@chakra-ui/react';
 import { BrowserRouter as Router, Switch, Route , Routes } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Pages/Home';
+import Header from './Components/Header/Header';
+import Footer from './Components/Footer/Footer';
 
 
 //Hello
@@ -13,9 +15,11 @@ function App() {
       <ChakraProvider>
         <Router>
           <Navbar/>
+          <Header/>
             <Routes>
               <Route path="/" element={<Home/>} />
             </Routes>
+          <Footer/>
         </Router>
       </ChakraProvider>
               
