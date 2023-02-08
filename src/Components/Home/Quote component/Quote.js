@@ -17,7 +17,7 @@ const Testimonial = ({ children }) => {
   return <Box>{children}</Box>;
 };
 
-const TestimonialContent = ({ children , bg }) => {
+const TestimonialContent = ({ children, bg }) => {
   return (
     <Stack
       bg={bg}
@@ -53,7 +53,7 @@ const TestimonialText = ({ children }) => {
     <Text
       textAlign={"center"}
       color={"blackAlpha.900"}
-      fontSize={"md"}
+      fontSize={{ base: "sm", md: "lg" , lg: "lg" }}
       fontWeight={500}
     >
       {children}
@@ -87,7 +87,7 @@ export default function Quote() {
       name: "A.P.J. Abdul Kalam",
       title: "Former President of India",
       bg: "orange.300",
-      src: "https://i.imgur.com/LKDPlDA.jpg"
+      src: "https://i.imgur.com/LKDPlDA.jpg",
     },
 
     {
@@ -96,7 +96,7 @@ export default function Quote() {
       name: "Sudha Murthy",
       title: "Chairperson of Infosys Foundation",
       bg: "white",
-      src : "https://i.imgur.com/8WLf4v0.jpg"
+      src: "https://i.imgur.com/8WLf4v0.jpg",
     },
 
     {
@@ -105,7 +105,7 @@ export default function Quote() {
       name: "Ratan Tata",
       title: "Chairman of Tata Group",
       bg: "green.700",
-      src: "https://i.imgur.com/GyKdhsv.jpg"
+      src: "https://i.imgur.com/GyKdhsv.jpg",
     },
   ];
 
@@ -116,30 +116,28 @@ export default function Quote() {
         color={"whiteAlpha.900"}
         className="quote"
         textAlign="center"
-        py={10}
+        py={{ base: 5, md: 12, lg: 12}}
         px={12}
+        mb={{ base: 0, md: 0 , lg: 12}}
       >
         <Box>
           <Container maxW={"7xl"} py={16} as={Stack} spacing={12}>
             <Stack spacing={0} align={"center"}>
-              <Heading>Some Famous Quotes</Heading>
+              <Heading fontSize={{ base: "lg" , lg: "4xl"}}>Some Famous Quotes</Heading>
               <Text> Quotes that inspired people to go big</Text>
             </Stack>
             <Stack
               direction={{ base: "column", md: "row" }}
               spacing={{ base: 10, md: 4, lg: 12 }}
+              w={{ base: "full", md: "full" }}
             >
               {quotes.map((quote) => (
                 <Testimonial>
-                  <TestimonialContent
-                    bg={quote.bg}
-                  >
+                  <TestimonialContent bg={quote.bg}>
                     <TestimonialText>"{quote.quote}"</TestimonialText>
                   </TestimonialContent>
                   <TestimonialAvatar
-                    src={
-                      quote.src
-                    }
+                    src={quote.src}
                     name={quote.name}
                     title={quote.title}
                   />

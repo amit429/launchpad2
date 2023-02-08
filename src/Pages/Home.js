@@ -3,6 +3,7 @@ import {useEffect, useState} from "react";
 import { Text } from "@chakra-ui/react";
 import Loader from "../Components/Loading Screen/Loader";
 import Quote from "../Components/Home/Quote component/Quote";
+import Aboutwpu from "../Components/Home/Aboutwpu/Aboutwpu";
   
 const Home = () => {
   
@@ -30,6 +31,7 @@ const Home = () => {
         return (
             <>
                 <Quote />
+                <Aboutwpu/>
                 
             </>
         )
