@@ -1,0 +1,92 @@
+@import "@fontsource/roboto";
+
+.Typewriter__wrapper{
+    font-size: 1.5rem;
+    font-family: 'Roboto';
+    padding: 1rem;
+}
+
+.typewriter{
+    display: inline-block;
+    border: 0.15em solid #a51e1e;
+    letter-spacing: 0.15em;
+
+}
+
+.loading{
+    width: 45vw;
+    height: 45vh;
+    margin-bottom: 1rem;
+}
+
+.logo{
+    width: 35vw;
+    height: 45vh;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+
+    .loading{
+        width: 35vw;
+        height: 35vh;
+    }
+
+    .Typewriter__wrapper{
+        font-size: 1.3rem;
+    }
+
+    .logo{
+        width: 45vw;
+        height: 35vh;
+        margin-bottom: 1rem;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+
+    .Typewriter__wrapper{
+        font-size: 1rem;
+    }
+
+    .loading{
+        width: 50vw;
+        height: 50vh;
+        margin-bottom: 0px;
+    }
+
+    .typewriter{
+        width: 70%;
+        text-align: center;
+    }
+
+    .logo{
+        width: 60vw;
+        height: 35vh;
+    }
+    
+}
+
+@media screen and (max-width: 320px) {
+
+    .Typewriter__wrapper{
+        font-size: 0.8rem;
+    }
+
+    .loading{
+        width: 60vw;
+        height: 60vh;
+    }
+
+    .typewriter{
+        width: 80%;
+        text-align: center;
+    }
+
+    .logo{
+        width: 85vw;
+        height: 38vh;
+    }
+    
+}
