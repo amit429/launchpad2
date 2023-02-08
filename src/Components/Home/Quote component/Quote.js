@@ -48,14 +48,6 @@ const TestimonialContent = ({ children , bg }) => {
   );
 };
 
-const TestimonialHeading = ({ children }) => {
-  return (
-    <Heading as={"h3"} fontSize={"xl"}>
-      {children}
-    </Heading>
-  );
-};
-
 const TestimonialText = ({ children }) => {
   return (
     <Text
