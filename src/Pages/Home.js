@@ -36,7 +36,6 @@ const Home = () => {
                 <Aboutwpu/>
                 <Goals/>
                 <Vision/>
-                
             </>
         )
     }

@@ -84,7 +84,7 @@ export default function Goals() {
         >
           Our Goals
         </Heading>
-      <SimpleGrid columns={[1, null, 3]} spacing='30px'>
+      <SimpleGrid columns={[1, 2, 3]} spacing='30px'>
         {features.map((feature) => (
              <Feature
              icon={feature.icon}
