@@ -10,6 +10,7 @@ export default function Aboutwpu() {
         bg={"gray.90"}
         alignItems="center"
         justifyContent="center"
+        mb={3}
       >
         <Box
           bg="white"
@@ -64,7 +65,7 @@ export default function Aboutwpu() {
               lg: "5xl",
             }}
             w={{ base: "full", lg: "40%" }}
-            mx={{ base: "sm" ,  lg: "auto" }}
+            mx={{ base: "" ,  lg: "auto" }}
           >
             <chakra.h2
               fontSize={{
@@ -76,6 +77,7 @@ export default function Aboutwpu() {
                 color: "white",
               }}
               fontWeight="bold"
+              textAlign={{base: "center", lg: "left"}}
             >
               Build Your New{" "}
               <chakra.span
@@ -94,6 +96,7 @@ export default function Aboutwpu() {
               _dark={{
                 color: "gray.400",
               }}
+              textAlign={{base: "center", lg: "left"}}
             >
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem
               modi reprehenderit vitae exercitationem aliquid dolores ullam
