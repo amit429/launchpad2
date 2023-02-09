@@ -134,7 +134,7 @@ export default function Navbar() {
                 <DrawerBody>
                   <Stack as={"nav"} spacing={4} color="black">
                     {nav.map((link) => (
-                      <Link to={link.path} key={link.name}>
+                      <Link to={link.path} key={link.name} onClick={onClose}>
                         {link.name}
                       </Link>
                     ))}
