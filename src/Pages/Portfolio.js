@@ -1,8 +1,28 @@
 import React from 'react'
 import Company from '../Components/Portfolio/Company'
 import ImageSlider from '../Components/Portfolio/ImageSlider'
-import logo from '../Assests/Launchpad Startups black.png'
-import { SimpleGrid , Box } from '@chakra-ui/react'
+import logo from '../Assests/Launchpad Startups colored.png'
+import { SimpleGrid , Box , Stack, Heading } from '@chakra-ui/react'
+
+const Companies = ({name , img}) =>{
+  return(
+      <Stack
+      m={{ base: 5, md: 8}}
+      boxShadow={'md'}
+      h={'xs'}
+      _hover={{
+        cursor: 'pointer',
+        transform: 'translateY(-10px)',
+      }}
+      transition={'all 0.5s ease-in-out'}
+    >
+      <Company
+        name={name}
+        img={img}
+        />
+    </Stack>
+  )
+}
 
 export default function Portfolio() {
 
@@ -37,31 +57,23 @@ export default function Portfolio() {
       img: logo
     },
 
-    {
-      name: "Company 7 Name",
-      img: logo
-    },
-
-    {
-      name: "Company 8 Name",
-      img: logo
-    },
-
-    {
-      name: "Company 9 Name",
-      img: logo
-    }
   ]
   return (
     <>
       <ImageSlider/>
       <Box p={{ base: 0  , md: 6}} mb={8}>
+        <Heading
+          as="h2"
+          size={{ base: 'xl', md: '2xl' }}
+          fontWeight="bold"
+          textAlign={{ base: 'center', md: 'center' }}
+          m={{ base: 4, md: 6 }}
+        >
+          Our Company Portfolio
+        </Heading>
       <SimpleGrid columns={[1, 2, 3]} >
         {companies.map((company) => (
-        <Company
-            name={company.name}
-            img={company.img}
-        />
+          <Companies name={company.name} img={company.img}/>
         ))}
       </SimpleGrid>
     </Box>

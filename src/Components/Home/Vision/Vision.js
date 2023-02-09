@@ -63,7 +63,7 @@ export default function Vision() {
                   md: "shorter",
                 }}
               >
-                A better way to send money
+                Creating a Network of Startups
               </chakra.h2>
               <chakra.p
                 mb={5}
@@ -79,9 +79,7 @@ export default function Vision() {
                   md: "lg",
                 }}
               >
-                Handle your subscriptions and transactions efficiently with the
-                clear overview in Dashboard. Features like the smart search
-                option allow you to quickly find any data you’re looking for.
+                Our vision is to create a network of startups that collaborate with each other to drive innovation and create value. We want to bring together the best and brightest minds to create the products and services that will shape the future of the industry. We believe that through this network, we can create a powerful foundation for success.
               </chakra.p>
               <Button
                 w={{
@@ -102,6 +100,7 @@ export default function Vision() {
                 color="gray.100"
                 as="a"
                 cursor="pointer"
+                href = "/about"
               >
                 Know more 
               </Button>
@@ -157,7 +156,7 @@ export default function Vision() {
                   md: "shorter",
                 }}
               >
-                Decide how you integrate Payments
+                Turning Ideas Into Reality
               </chakra.h2>
               <chakra.p
                 mb={5}
@@ -173,10 +172,7 @@ export default function Vision() {
                   md: "lg",
                 }}
               >
-                Love to code? Next to our ready-made and free plugins you can
-                use our expansive yet simple API; decide how you integrate
-                Payments and build advanced and reliable products yourself from
-                scratch.
+                Our vision is to turn ideas into reality. We want to provide entrepreneurs with the tools, resources, and guidance they need to bring their ideas to life. We will provide mentorship, support, and resources to help entrepreneurs create successful businesses that have the potential to make a lasting impact. 
               </chakra.p>
               <Button
                 w={{
@@ -194,6 +190,7 @@ export default function Vision() {
                 color="gray.100"
                 as="a"
                 cursor="pointer"
+                href = "/about"
               >
                 Know more 
               </Button>

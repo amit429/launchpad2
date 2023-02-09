@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "launchpad-startups"
+  },
+  "targets": {
+    "launchpad-startups": {
+      "hosting": {
+        "static": [
+          "soonlaunchpad-startups"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
