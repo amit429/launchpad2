@@ -4,6 +4,8 @@ import { Text } from "@chakra-ui/react";
 import Loader from "../Components/Loading Screen/Loader";
 import Quote from "../Components/Home/Quote component/Quote";
 import Aboutwpu from "../Components/Home/Aboutwpu/Aboutwpu";
+import Goals from "../Components/Home/Goals/Goals";
+import Vision from "../Components/Home/Vision/Vision";
   
 const Home = () => {
   
@@ -32,6 +34,8 @@ const Home = () => {
             <>
                 <Quote />
                 <Aboutwpu/>
+                <Goals/>
+                <Vision/>
                 
             </>
         )
