@@ -112,8 +112,8 @@ export default function Vision() {
               py={48}
               bg="gray.200"
               bgImage={"https://i.imgur.com/IgXb9b8.jpg"}
-              bgSize="cover"
-              bgPosition="center"
+              bgSize={{ base: "cover", md: "cover" }}
+              bgPosition={{ base: "center", md: "center" }}
             >
             </Box>
           </SimpleGrid>

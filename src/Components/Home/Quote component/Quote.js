@@ -104,7 +104,7 @@ export default function Quote() {
         "Ups and downs in life are very important to keep us going because a straight line, even in an ECG. means we are not alive.",
       name: "Ratan Tata",
       title: "Chairman of Tata Group",
-      bg: "green.700",
+      bg: "green.400",
       src: "https://i.imgur.com/GyKdhsv.jpg",
     },
   ];
