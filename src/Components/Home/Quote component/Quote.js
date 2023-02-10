@@ -12,6 +12,7 @@ import {
   Avatar,
   useColorModeValue,
 } from "@chakra-ui/react";
+import { useParallax } from "react-scroll-parallax";
 
 const Testimonial = ({ children }) => {
   return <Box>{children}</Box>;
@@ -19,6 +20,7 @@ const Testimonial = ({ children }) => {
 
 const TestimonialContent = ({ children, bg }) => {
   return (
+    
     <Stack
       bg={bg}
       boxShadow={"lg"}
@@ -111,6 +113,7 @@ export default function Quote() {
 
   return (
     <>
+     
       <Box
         bg={"blue.900"}
         color={"whiteAlpha.900"}
@@ -147,6 +150,7 @@ export default function Quote() {
           </Container>
         </Box>
       </Box>
+
     </>
   );
 }

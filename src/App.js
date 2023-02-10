@@ -17,6 +17,7 @@ function App() {
   return (
     <>
       <ChakraProvider>
+
         <Router>
           <Navbar/>
           <Header/>
@@ -29,6 +30,7 @@ function App() {
             </Routes>
           <Footer/>
         </Router>
+
       </ChakraProvider>
               
 

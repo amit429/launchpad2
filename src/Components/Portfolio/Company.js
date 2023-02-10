@@ -47,7 +47,6 @@ export default function Company(props) {
           </Box>
         </Box>
       </Flex>
-      ;
     </>
   );
 }
