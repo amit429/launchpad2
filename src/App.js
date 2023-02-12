@@ -10,7 +10,7 @@ import About from './Pages/About';
 import Resources from './Pages/Resources';
 import Contact from './Pages/Contact';
 import Teams from './Pages/Team';
-import { launchPadTheme } from './Styles/theme';
+import { launchPadTheme } from './styles/theme';
 
 
 //Hello
