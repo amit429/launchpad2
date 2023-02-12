@@ -61,7 +61,7 @@ export default function Navbar() {
   return (
     <>
       <Box
-        bg={useColorModeValue("whiteAlpha.300", "whiteAlpha.800")}
+        bg={useColorModeValue("primary.100", "primary.300")}
         px={4}
         style={{
           boxShadow: "0 0 10px rgba(0,0,0,0.2)",
@@ -103,8 +103,11 @@ export default function Navbar() {
                 <Button
                   variant={"ghost"}
                   _hover={{
-                    bg: "orange.200",
+                    color: "white",
+                    bg: "tertiary.800",
+                    
                   }}
+                  transitionDuration="0.5s"
                 >
                   <Link
                     _hover={{
@@ -114,6 +117,7 @@ export default function Navbar() {
                     fontSize={"lg"}
                     to={link.path}
                     key={link.name}
+                    
                   >
                     {link.name}
                   </Link>

@@ -1,9 +1,6 @@
 import { extendTheme } from '@chakra-ui/react'
 import { ButtonStyles as Button } from './Button'
 
-
-
-
 const launchPadTheme = extendTheme({
     colors: {
         primary: {
