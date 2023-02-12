@@ -77,8 +77,12 @@ export default function Navbar() {
             size={"md"}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
             aria-label={"Open Menu"}
-            display={{ md: "none" }}
+            display={{ base: "flex" , md: "none" }}
             onClick={isOpen ? onClose : onOpen}
+            bg="blue.900"
+            alignItems={"center"}
+            justifyContent={"center"}
+            h={9}
           />
           <HStack spacing={8} alignItems={"center"}>
             <Box
