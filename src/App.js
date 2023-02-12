@@ -10,6 +10,7 @@ import About from './Pages/About';
 import Resources from './Pages/Resources';
 import Contact from './Pages/Contact';
 import Teams from './Pages/Team';
+import { launchPadTheme } from './styles/theme';
 
 
 //Hello
@@ -17,11 +18,11 @@ import Teams from './Pages/Team';
 function App() {
   return (
     <>
-      <ChakraProvider>
+      <ChakraProvider theme={launchPadTheme}>
 
         <Router>
           <Navbar/>
-          <Header/>
+          
             <Routes>
               <Route path="/" element={<Home/>} />
               <Route path="/portfolio" element={<Portfolio/>} />
