@@ -9,7 +9,7 @@ const Companies = ({name , img}) =>{
       <Stack
       m={{ base: 5, md: 8}}
       boxShadow={'md'}
-      h={'xs'}
+      h={60}
       _hover={{
         cursor: 'pointer',
         transform: 'translateY(-10px)',

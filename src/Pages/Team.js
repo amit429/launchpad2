@@ -30,55 +30,55 @@ export default function Teams() {
             name: "Name 1",
             img: pf,
             designation: "Designation 1",
-            linkedin: "https://www.linkedin.com/in/username/"
+            linkedin: "https://www.linkedin.com/"
         },
         {
             name: "Name 2",
             img: pf,
             designation: "Designation 2",
-            linkedin: "https://www.linkedin.com/in/username/"
+            linkedin: "https://www.linkedin.com/"
         },
         {
             name: "Name 3",
             img: pf,
             designation: "Designation 3",
-            linkedin: "https://www.linkedin.com/in/username/"
+            linkedin: "https://www.linkedin.com/"
         },
         {
             name: "Name 4",
             img: pf,
             designation: "Designation 4",
-            linkedin: "https://www.linkedin.com/in/username/"
+            linkedin: "https://www.linkedin.com/"
         },
         {
             name: "Name 5",
             img: pf,
             designation: "Designation 5",
-            linkedin: "https://www.linkedin.com/in/username/"
+            linkedin: "https://www.linkedin.com/"
         },
         {
             name: "Name 6",
             img: pf,
             designation: "Designation 6",
-            linkedin: "https://www.linkedin.com/in/username/"
+            linkedin: "https://www.linkedin.com/"
         },
         {
             name: "Name 7",
             img: pf,
             designation: "Designation 7",
-            linkedin: "https://www.linkedin.com/in/username/"
+            linkedin: "https://www.linkedin.com/"
         },
         {
             name: "Name 8",
             img: pf,
             designation: "Designation 8",
-            linkedin: "https://www.linkedin.com/in/username/"
+            linkedin: "https://www.linkedin.com/"
         },
         {
             name: "Name 9",
             img: pf,
             designation: "Designation 9",
-            linkedin: "https://www.linkedin.com/in/username/"
+            linkedin: "https://www.linkedin.com/"
         }
         ]
     return (
@@ -91,7 +91,7 @@ export default function Teams() {
             >
                 <Heading
                     as="h1"
-                    size="4xl"
+                    size="3xl"
                     fontFamily="body"
                     fontWeight="bold"
                 >

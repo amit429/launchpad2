@@ -26,7 +26,7 @@ export default function Company(props) {
         >
           <Image
             w="full"
-            h={56}
+            h={40}
             fit="fit"
             src= {props.img}
             alt="avatar"

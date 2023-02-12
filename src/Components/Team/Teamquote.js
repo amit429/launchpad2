@@ -31,14 +31,9 @@ import animationTeam from '../../Assests/team.gif'
               <Text
                 as={'span'}
                 position={'relative'}
-                _after={{
-                  content: "''",
-                  width: 'full',
-                  height: '20%',
-                  position: 'absolute',
-                  bottom: 1,
-                  left: 0,
-                }}>
+                textAlign={'left'}
+                
+                >
                 "Teamwork is the secret that makes common people achieve uncommon results."
               </Text>
               <br />
