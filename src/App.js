@@ -9,6 +9,7 @@ import Portfolio from './Pages/Portfolio';
 import About from './Pages/About';
 import Resources from './Pages/Resources';
 import Contact from './Pages/Contact';
+import Teams from './Pages/Team';
 
 
 //Hello
@@ -27,6 +28,7 @@ function App() {
               <Route path="/about" element={<About/>} />
               <Route path="/resources" element={<Resources/>} />
               <Route path="/contact" element={<Contact/>} />
+              <Route path="/team" element={<Teams/>} />
             </Routes>
           <Footer/>
         </Router>
