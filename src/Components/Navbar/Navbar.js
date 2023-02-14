@@ -54,6 +54,11 @@ export default function Navbar() {
         },
 
         {
+          name: "Our Team",
+          path: "/team"
+      },
+
+        {
             name: "Contact",
             path: "/contact"
         }
@@ -109,6 +114,8 @@ export default function Navbar() {
                   _hover={{
                     bg: "orange.200",
                   }}
+                  as={Link}
+                  to={link.path}
                 >
                   <Link
                     _hover={{

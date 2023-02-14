@@ -20,7 +20,7 @@ export default function Pfcard(props) {
         maxW={'320px'}
         w={'full'}
         // bg={useColorModeValue('white', 'gray.900')}
-        boxShadow={'xl'}
+        boxShadow={'lg'}
         rounded={'lg'}
         p={6}
         textAlign={'center'}
@@ -29,6 +29,7 @@ export default function Pfcard(props) {
         backdropFilter='auto'
         backdropBlur='6px'
         _hover={{transform:'scale(1.1)'}}
+        transition='all 0.5s ease-in-out'
       >
         <Avatar
           size={'xl'}
