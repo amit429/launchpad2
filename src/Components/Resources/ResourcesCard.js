@@ -27,13 +27,17 @@ export default function ResourcesCard(props) {
           mt={-6}
           mx={-6}
           mb={6}
-          pos={'relative'}>
-          <Img
+          pos={'relative'}
+          bgImage={props.img}
+          bgSize={'cover'}
+          bgPosition={'center center'}
+          bgRepeat={'no-repeat'}>
+          {/* <Img
             src={
               props.img
             }
             layout={'fill'}
-          />
+          /> */}
         </Box>
         <Stack>
           <Text
