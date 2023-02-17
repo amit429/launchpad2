@@ -17,18 +17,30 @@ export default function Pfcard(props) {
   return (
     <Center py={6}>
       <Box
+
+        transition={{
+          duration: 3,
+          ease: "easeInOut",
+          bgGradient: "linear(to-b, orange,white,green)"
+        }}
+
         maxW={'320px'}
         w={'full'}
-        // bg={useColorModeValue('white', 'gray.900')}
+        bg={useColorModeValue('white', 'gray.900')}
         boxShadow={'lg'}
         rounded={'lg'}
         p={6}
         textAlign={'center'}
-        bgImage={bg}
+        // bgImage={bg}
         // filter='auto'
         backdropFilter='auto'
         backdropBlur='6px'
-        _hover={{transform:'scale(1.1)'}}
+        _hover={{
+          transition: 'all 1s ease-in-out',
+          transform: 'scale(1.05)',
+          bgGradient: "linear(to-b, orange,white,green)",
+          boxShadow: 'xl'
+        }}
         transition='all 0.5s ease-in-out'
       >
         <Avatar
