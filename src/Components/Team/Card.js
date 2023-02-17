@@ -9,39 +9,40 @@ import {
   Link,
   Badge,
   useColorModeValue,
+  keyframes,
 } from '@chakra-ui/react';
-import { SiLinkedin } from 'react-icons/si';
-import bg from '../../Assests/bg.png'
+import { SiLinkedin, SiTwitter } from 'react-icons/si';
+import { motion } from 'framer-motion'
+import bg from '../../Assests/team.gif'
 
 export default function Pfcard(props) {
   return (
     <Center py={6}>
       <Box
-
-        transition={{
-          duration: 3,
-          ease: "easeInOut",
-          bgGradient: "linear(to-b, orange,white,green)"
-        }}
-
+        as={motion.div}
+        border={'1px dotted'}
         maxW={'320px'}
         w={'full'}
         bg={useColorModeValue('white', 'gray.900')}
-        boxShadow={'lg'}
+        boxShadow={'xl'}
         rounded={'lg'}
         p={6}
         textAlign={'center'}
         // bgImage={bg}
         // filter='auto'
         backdropFilter='auto'
-        backdropBlur='6px'
-        _hover={{
-          transition: 'all 1s ease-in-out',
-          transform: 'scale(1.05)',
-          bgGradient: "linear(to-b, orange,white,green)",
-          boxShadow: 'xl'
+        backdropBlur='6px'        
+        whileHover={{
+          scale: 1.05,
         }}
-        transition='all 0.5s ease-in-out'
+        transition={{ duration: 0.5 }}
+        bgSize='cover'
+        animation={'background-gradient 5s'}
+        _hover={{
+          // bgGradient: "linear(to-b, orange,white,white,green)",
+          boxShadow: '2xl',
+          bgImage: bg
+        }}
       >
         <Avatar
           size={'xl'}
@@ -132,21 +133,32 @@ export default function Pfcard(props) {
               Follow
             </Button> */}
         <Center>
-          <Button
-            // w={'full'}
-            maxW={'sm'}
-            mb={2}
-            colorScheme={'messenger'}
-            leftIcon={<SiLinkedin />}
-            onClick={() => window.open(props.linkedin, "_blank")}
-          >
-            <Center>
-              <Text>Linkedin</Text>
-            </Center>
-          </Button>
+          <Stack>
+            <Button
+              // w={'full'}
+              maxW={'sm'}
+              mb={2}
+              colorScheme={'messenger'}
+              leftIcon={<SiLinkedin />}
+              onClick={() => window.open(props.linkedin, "_blank")}
+            >
+              <Center>
+                <Text>Linkedin</Text>
+              </Center>
+            </Button>
+
+            <Button colorScheme='twitter' leftIcon={<SiTwitter />}
+              maxW={'sm'}
+              mb={2}
+              onClick={() => window.open(props.twitter, "_blank")} >
+              <Center>
+                <Text>Twitter</Text>
+              </Center>
+            </Button>
+          </Stack>
         </Center>
         {/* </Stack> */}
-      </Box>
+      </Box >
     </Center >
   );
 }
