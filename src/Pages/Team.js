@@ -5,7 +5,7 @@ import Demo from '../Assests/demo.jpg'
 import Teamquote from "../Components/Team/Teamquote";
 import { SimpleGrid, Box, Stack, Heading } from "@chakra-ui/react";
 
-const Team = ({ name, img, designation, linkedin }) => {
+const Team = ({ name, img, designation, linkedin,twitter }) => {
     return (
         // <Stack
         //     boxShadow={'md'}
@@ -20,6 +20,7 @@ const Team = ({ name, img, designation, linkedin }) => {
                 img={img}
                 designation={designation}
                 linkedin={linkedin}
+                twitter={twitter}
             />
         // </Stack>
     )
@@ -31,55 +32,64 @@ export default function Teams() {
             name: "Name 1",
             img: Demo,
             designation: "Designation 1",
-            linkedin: "https://www.linkedin.com/"
+            linkedin: "https://www.linkedin.com/",
+            twitter: "https://www.twitter.com/"
         },
         {
             name: "Name 2",
             img: Demo,
             designation: "Designation 2",
-            linkedin: "https://www.linkedin.com/"
+            linkedin: "https://www.linkedin.com/",
+            twitter: "https://www.twitter.com/"
         },
         {
             name: "Name 3",
             img: Demo,
             designation: "Designation 3",
-            linkedin: "https://www.linkedin.com/"
+            linkedin: "https://www.linkedin.com/",
+            twitter: "https://www.twitter.com/"
         },
         {
             name: "Name 4",
             img: Demo,
             designation: "Designation 4",
-            linkedin: "https://www.linkedin.com/"
+            linkedin: "https://www.linkedin.com/",
+            twitter: "https://www.twitter.com/"
         },
         {
             name: "Name 5",
             img: Demo,
             designation: "Designation 5",
-            linkedin: "https://www.linkedin.com/"
+            linkedin: "https://www.linkedin.com/",
+            twitter: "https://www.twitter.com/"
         },
         {
             name: "Name 6",
             img: Demo,
             designation: "Designation 6",
-            linkedin: "https://www.linkedin.com/"
+            linkedin: "https://www.linkedin.com/",
+            twitter: "https://www.twitter.com/"
         },
         {
             name: "Name 7",
             img: Demo,
             designation: "Designation 7",
-            linkedin: "https://www.linkedin.com/"
+            linkedin: "https://www.linkedin.com/",
+            twitter: "https://www.twitter.com/"
         },
         {
             name: "Name 8",
             img: Demo,
             designation: "Designation 8",
-            linkedin: "https://www.linkedin.com/"
+            linkedin: "https://www.linkedin.com/",
+            twitter: "https://www.twitter.com/"
         },
         {
             name: "Name 9",
             img: Demo,
             designation: "Designation 9",
-            linkedin: "https://www.linkedin.com/"
+            linkedin: "https://www.linkedin.com/",
+            twitter: "https://www.twitter.com/"
         }
         ]
     return (
@@ -110,6 +120,7 @@ export default function Teams() {
                         img={member.img}
                         designation={member.designation}
                         linkedin={member.linkedin}
+                        twitter={member.twitter}
                     />
                 ))}
             </SimpleGrid>

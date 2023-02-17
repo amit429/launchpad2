@@ -1,67 +1,83 @@
 import {
-    Avatar,
-    Box,
-    chakra,
-    Container,
-    Flex,
-    Icon,
-    SimpleGrid,
-    useColorModeValue,
-  } from '@chakra-ui/react';
-  
-  const testimonials = [
-    {
-      name: 'Brandon P.',
-      role: 'Chief Marketing Officer',
-      content:
-        'It really saves me time and effort. It is exactly what our business has been lacking. EEZY is the most valuable business resource we have EVER purchased. After using EEZY my business skyrocketed!',
-      avatar:
-        'https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80',
-    },
-    {
-      name: 'Krysta B.',
-      role: 'Entrepreneur',
-      content:
-        "I didn't even need training. We've used EEZY for the last five years. I have gotten at least 50 times the value from EEZY. I made back the purchase price in just 48 hours!",
-      avatar:
-        'https://images.unsplash.com/photo-1598550874175-4d0ef436c909?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80',
-    },
-    {
-      name: 'Darcy L.',
-      role: 'Movie star',
-      content:
-        "Thank you for making it painless, pleasant and most of all, hassle free! I'm good to go. No matter where you go, EEZY is the coolest, most happening thing around! I love EEZY!",
-      avatar:
-        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=334&q=80',
-    },
-    {
-      name: 'Daniel T.',
-      role: 'Musician',
-      content:
-        'I am so pleased with this product. EEZY is both attractive and highly adaptable. Without EEZY, we would have gone bankrupt by now. Thank you for creating this product!',
-      avatar:
-        'https://images.unsplash.com/photo-1606513542745-97629752a13b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80',
-    },
-  ];
-  
-  // const backgrounds = [
-  //   `url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='560' height='185' viewBox='0 0 560 185' fill='black'%3E%3Cellipse cx='457.367' cy='123.926' rx='102.633' ry='61.0737' transform='rotate(-180 457.367 123.926)' fill='black'/%3E%3Cellipse cx='160.427' cy='61.0737' rx='102.633' ry='61.0737' transform='rotate(-180 160.427 61.0737)' fill='black'/%3E%3Cellipse cx='193.808' cy='111.771' rx='193.808' ry='73.2292' transform='rotate(-180 193.808 111.771)' fill='black'/%3E%3Cellipse cx='337.295' cy='74.415' rx='193.808' ry='73.2292' transform='rotate(-180 337.295 74.415)' fill='black'/%3E%3C/svg%3E")`,
-  //   `url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='560' height='185' viewBox='0 0 560 185' fill='green'%3E%3Cellipse cx='457.367' cy='123.926' rx='102.633' ry='61.0737' transform='rotate(-180 457.367 123.926)' fill='green'/%3E%3Cellipse cx='160.427' cy='61.0737' rx='102.633' ry='61.0737' transform='rotate(-180 160.427 61.0737)' fill='orange'/%3E%3Cellipse cx='193.808' cy='111.771' rx='193.808' ry='73.2292' transform='rotate(-180 193.808 111.771)' fill='green'/%3E%3Cellipse cx='337.295' cy='74.415' rx='193.808' ry='73.2292' transform='rotate(-180 337.295 74.415)' fill='orange'/%3E%3C/svg%3E")`,
-  //   `url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='560' height='185' viewBox='0 0 560 185' fill='green'%3E%3Cellipse cx='457.367' cy='123.926' rx='102.633' ry='61.0737' transform='rotate(-180 457.367 123.926)' fill='green'/%3E%3Cellipse cx='160.427' cy='61.0737' rx='102.633' ry='61.0737' transform='rotate(-180 160.427 61.0737)' fill='orange'/%3E%3Cellipse cx='193.808' cy='111.771' rx='193.808' ry='73.2292' transform='rotate(-180 193.808 111.771)' fill='green'/%3E%3Cellipse cx='337.295' cy='74.415' rx='193.808' ry='73.2292' transform='rotate(-180 337.295 74.415)' fill='orange'/%3E%3C/svg%3E")`,
-  //   `url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='560' height='185' viewBox='0 0 560 185' fill='green'%3E%3Cellipse cx='457.367' cy='123.926' rx='102.633' ry='61.0737' transform='rotate(-180 457.367 123.926)' fill='green'/%3E%3Cellipse cx='160.427' cy='61.0737' rx='102.633' ry='61.0737' transform='rotate(-180 160.427 61.0737)' fill='orange'/%3E%3Cellipse cx='193.808' cy='111.771' rx='193.808' ry='73.2292' transform='rotate(-180 193.808 111.771)' fill='green'/%3E%3Cellipse cx='337.295' cy='74.415' rx='193.808' ry='73.2292' transform='rotate(-180 337.295 74.415)' fill='orange'/%3E%3C/svg%3E")`,
-  // ];
-  
-  interface TestimonialCardProps {
-    name: string;
-    role: string;
-    content: string;
-    avatar: string;
-    index: number;
-  }
-  
-  function TestimonialCard(props: TestimonialCardProps) {
-    const { name, role, content, avatar, index } = props;
-    return (
+  Avatar,
+  Box,
+  chakra,
+  Container,
+  Flex,
+  Icon,
+  SimpleGrid,
+  useColorModeValue,
+  ScaleFade
+} from '@chakra-ui/react';
+import { useInViewport } from 'react-in-viewport';
+import React, { useRef } from 'react';
+
+const testimonials = [
+  {
+    name: 'Brandon P.',
+    role: 'Chief Marketing Officer',
+    content:
+      'It really saves me time and effort. It is exactly what our business has been lacking. EEZY is the most valuable business resource we have EVER purchased. After using EEZY my business skyrocketed!',
+    avatar:
+      'https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80',
+  },
+  {
+    name: 'Krysta B.',
+    role: 'Entrepreneur',
+    content:
+      "I didn't even need training. We've used EEZY for the last five years. I have gotten at least 50 times the value from EEZY. I made back the purchase price in just 48 hours!",
+    avatar:
+      'https://images.unsplash.com/photo-1598550874175-4d0ef436c909?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80',
+  },
+  {
+    name: 'Darcy L.',
+    role: 'Movie star',
+    content:
+      "Thank you for making it painless, pleasant and most of all, hassle free! I'm good to go. No matter where you go, EEZY is the coolest, most happening thing around! I love EEZY!",
+    avatar:
+      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=334&q=80',
+  },
+  {
+    name: 'Daniel T.',
+    role: 'Musician',
+    content:
+      'I am so pleased with this product. EEZY is both attractive and highly adaptable. Without EEZY, we would have gone bankrupt by now. Thank you for creating this product!',
+    avatar:
+      'https://images.unsplash.com/photo-1606513542745-97629752a13b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80',
+  },
+];
+
+// const backgrounds = [
+//   `url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='560' height='185' viewBox='0 0 560 185' fill='black'%3E%3Cellipse cx='457.367' cy='123.926' rx='102.633' ry='61.0737' transform='rotate(-180 457.367 123.926)' fill='black'/%3E%3Cellipse cx='160.427' cy='61.0737' rx='102.633' ry='61.0737' transform='rotate(-180 160.427 61.0737)' fill='black'/%3E%3Cellipse cx='193.808' cy='111.771' rx='193.808' ry='73.2292' transform='rotate(-180 193.808 111.771)' fill='black'/%3E%3Cellipse cx='337.295' cy='74.415' rx='193.808' ry='73.2292' transform='rotate(-180 337.295 74.415)' fill='black'/%3E%3C/svg%3E")`,
+//   `url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='560' height='185' viewBox='0 0 560 185' fill='green'%3E%3Cellipse cx='457.367' cy='123.926' rx='102.633' ry='61.0737' transform='rotate(-180 457.367 123.926)' fill='green'/%3E%3Cellipse cx='160.427' cy='61.0737' rx='102.633' ry='61.0737' transform='rotate(-180 160.427 61.0737)' fill='orange'/%3E%3Cellipse cx='193.808' cy='111.771' rx='193.808' ry='73.2292' transform='rotate(-180 193.808 111.771)' fill='green'/%3E%3Cellipse cx='337.295' cy='74.415' rx='193.808' ry='73.2292' transform='rotate(-180 337.295 74.415)' fill='orange'/%3E%3C/svg%3E")`,
+//   `url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='560' height='185' viewBox='0 0 560 185' fill='green'%3E%3Cellipse cx='457.367' cy='123.926' rx='102.633' ry='61.0737' transform='rotate(-180 457.367 123.926)' fill='green'/%3E%3Cellipse cx='160.427' cy='61.0737' rx='102.633' ry='61.0737' transform='rotate(-180 160.427 61.0737)' fill='orange'/%3E%3Cellipse cx='193.808' cy='111.771' rx='193.808' ry='73.2292' transform='rotate(-180 193.808 111.771)' fill='green'/%3E%3Cellipse cx='337.295' cy='74.415' rx='193.808' ry='73.2292' transform='rotate(-180 337.295 74.415)' fill='orange'/%3E%3C/svg%3E")`,
+//   `url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='560' height='185' viewBox='0 0 560 185' fill='green'%3E%3Cellipse cx='457.367' cy='123.926' rx='102.633' ry='61.0737' transform='rotate(-180 457.367 123.926)' fill='green'/%3E%3Cellipse cx='160.427' cy='61.0737' rx='102.633' ry='61.0737' transform='rotate(-180 160.427 61.0737)' fill='orange'/%3E%3Cellipse cx='193.808' cy='111.771' rx='193.808' ry='73.2292' transform='rotate(-180 193.808 111.771)' fill='green'/%3E%3Cellipse cx='337.295' cy='74.415' rx='193.808' ry='73.2292' transform='rotate(-180 337.295 74.415)' fill='orange'/%3E%3C/svg%3E")`,
+// ];
+
+interface TestimonialCardProps {
+  name: string;
+  role: string;
+  content: string;
+  avatar: string;
+  index: number;
+}
+
+function TestimonialCard(props: TestimonialCardProps) {
+  const { name, role, content, avatar, index } = props;
+
+  const ref = useRef(null);
+  const { enterCount } = useInViewport(
+    ref,
+    { rootMargin: '-100px' },
+    { disconnectOnLeave: false },
+    {}
+  );
+
+  return (
+    <ScaleFade
+      initialScale={0.6}
+      in={enterCount > 0}>
+
       <Flex
         boxShadow={'lg'}
         maxW={'640px'}
@@ -96,7 +112,8 @@ import {
           top: 0,
           left: 0,
           // backgroundImage: backgrounds[index % 4],
-        }}>
+        }}
+        ref={ref}>
         <Flex
           direction={'column'}
           textAlign={'left'}
@@ -127,28 +144,30 @@ import {
           m={{ base: '0 0 35px 0', md: '0 0 0 50px' }}
         />
       </Flex>
-    );
-  }
-  
-  export default function Testimonials() {
-    return (
-      <Flex
-        textAlign={'center'}
-        pt={10}
-        justifyContent={'center'}
-        direction={'column'}
-        width={'full'}
-        overflow={'hidden'}>
-        <Box width={{ base: 'full', sm: 'lg', lg: 'xl' }} margin={'auto'}>
-          <chakra.h1
-            py={5}
-            fontSize={48}
-            fontFamily={'Sans-serif'}
-            fontWeight={'bold'}
-            color={useColorModeValue('gray.700', 'gray.50')}>
-            See what our Founders have to say!
-          </chakra.h1>
-          {/* <chakra.h2
+
+    </ScaleFade>
+  );
+}
+
+export default function Testimonials() {
+  return (
+    <Flex
+      textAlign={'center'}
+      pt={10}
+      justifyContent={'center'}
+      direction={'column'}
+      width={'full'}
+      overflow={'hidden'}>
+      <Box width={{ base: 'full', sm: 'lg', lg: 'xl' }} margin={'auto'}>
+        <chakra.h1
+          py={5}
+          fontSize={48}
+          fontFamily={'Sans-serif'}
+          fontWeight={'bold'}
+          color={useColorModeValue('gray.700', 'gray.50')}>
+          See what our Founders have to say!
+        </chakra.h1>
+        {/* <chakra.h2
             margin={'auto'}
             width={'70%'}
             fontFamily={'Inter'}
@@ -160,19 +179,19 @@ import {
             </chakra.strong>{' '}
             influencers use EEZY to manage their social media content!
           </chakra.h2> */}
-        </Box>
-        <SimpleGrid
-          columns={{ base: 1, xl: 2 }}
-          spacing={'20'}
-          mt={16}
-          mb={16}
-          mx={'auto'}>
-          {testimonials.map((cardInfo, index) => (
-            <TestimonialCard {...cardInfo} index={index} />
-          ))}
-        </SimpleGrid>
-        <Box>
-        </Box>
-      </Flex>
-    );
-  }
+      </Box>
+      <SimpleGrid
+        columns={{ base: 1, xl: 2 }}
+        spacing={'20'}
+        mt={16}
+        mb={16}
+        mx={'auto'}>
+        {testimonials.map((cardInfo, index) => (
+          <TestimonialCard {...cardInfo} index={index} />
+        ))}
+      </SimpleGrid>
+      <Box>
+      </Box>
+    </Flex>
+  );
+}
