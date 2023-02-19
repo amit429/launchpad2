@@ -19,10 +19,8 @@ function App() {
   return (
     <>
       <ChakraProvider theme={launchPadTheme}>
-
         <Router>
           <Navbar/>
-          
             <Routes>
               <Route path="/" element={<Home/>} />
               <Route path="/portfolio" element={<Portfolio/>} />

@@ -17,7 +17,8 @@ import animationTeam from '../../Assests/team.gif'
 
   export default function Teamquote() {
     return (
-      <Container maxW={'6xl'}>
+      <Container maxW={'full'}
+      bg={"navy"}>
         <Stack
           align={'center'}
           spacing={{ base: 7, md: 10 }}
@@ -27,12 +28,13 @@ import animationTeam from '../../Assests/team.gif'
             <Heading
               lineHeight={1.1}
               fontWeight={600}
+              ml={"15%"}
               fontSize={{ base: '2xl', sm: '3xl', lg: '5xl' }}>
               <Text
                 as={'span'}
                 position={'relative'}
-                textAlign={'left'}
-                
+                // textAlign={'left'}
+                color={"white"}
                 >
                 "Teamwork is the secret that makes common people achieve uncommon results."
               </Text>

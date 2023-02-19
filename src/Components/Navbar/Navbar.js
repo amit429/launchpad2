@@ -54,6 +54,11 @@ export default function Navbar() {
         },
 
         {
+          name: "Our Team",
+          path: "/team"
+      },
+
+        {
             name: "Contact",
             path: "/contact"
         }
@@ -77,8 +82,12 @@ export default function Navbar() {
             size={"md"}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
             aria-label={"Open Menu"}
-            display={{ md: "none" }}
+            display={{ base: "flex" , md: "none" }}
             onClick={isOpen ? onClose : onOpen}
+            bg="blue.900"
+            alignItems={"center"}
+            justifyContent={"center"}
+            h={9}
           />
           <HStack spacing={8} alignItems={"center"}>
             <Box
@@ -107,7 +116,8 @@ export default function Navbar() {
                     bg: "tertiary.800",
                     
                   }}
-                  transitionDuration="0.5s"
+                  as={Link}
+                  to={link.path}
                 >
                   <Link
                     _hover={{

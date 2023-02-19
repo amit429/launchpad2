@@ -6,12 +6,63 @@ import {
     chakra,
     Container,
     Flex,
+    Text,
     Icon,
     SimpleGrid,
     useColorModeValue,
   } from '@chakra-ui/react';
 
 export default function Timeline() {
+
+    const details = [
+        {
+            title: 'Creative Director',
+            subtitle: 'Miami, FL',
+            description: 'Creative Direction, User Experience, Visual Design, Project Management, Team Leading',
+            date: '2011 - present',
+            color: "rgb(240, 149, 65)"
+        },
+
+        {
+            title: 'Art Director',
+            subtitle: 'San Francisco, CA',
+            description: 'Creative Direction, User Experience, Visual Design, SEO, Online Marketing',
+            date: '2010 - 2011',
+            color : "rgb(28, 37, 71)"
+        },
+
+        {
+            title: 'Web Designer',
+            subtitle: 'Los Angeles, CA',
+            description: 'User Experience, Visual Design',
+            date: '2008 - 2010',
+            color: "rgb(56, 102, 68)"
+        },
+
+        {
+            title: 'Web Designer',
+            subtitle: 'San Francisco, CA',
+            description: 'User Experience, Visual Design',
+            date: '2006 - 2008',
+            color: "rgb(240, 149, 65)"
+        },
+
+        {
+            title: 'Graphic Designer',
+            subtitle: 'London, UK',
+            description: 'User Experience, Visual Design',
+            date: '2004 - 2006',
+            color : "rgb(28, 37, 71)"
+        },
+
+        {
+            title: 'Graphic Artist',
+            subtitle: 'San Francisco, CA',
+            description: 'User Experience, Visual Design',
+            date: '2002 - 2004',
+            color: "rgb(56, 102, 68)"
+        },
+    ]
     return (
         <>
         <Flex
@@ -28,7 +79,7 @@ export default function Timeline() {
             fontSize={48}
             fontFamily={'Sans-serif'}
             fontWeight={'bold'}
-            color={useColorModeValue('gray.700', 'gray.50')}>
+            color={useColorModeValue('blue.900', 'blue.50')}>
             Our Timeline
           </chakra.h1>
           </Box>
@@ -36,92 +87,27 @@ export default function Timeline() {
 
             <VerticalTimeline
             lineColor='black'>
-                <VerticalTimelineElement
+                {details.map((detail) => {
+                    return (
+                        <VerticalTimelineElement
                     className="vertical-timeline-element--work"
-                    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                    date="2011 - present"
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                    contentStyle={{ background: `${detail.color}` , color: '#fff' }}
+                    contentArrowStyle={{ borderRight: `7px solid  ${detail.color}` }}
+                    date= {detail.date}
+                    iconStyle={{ background: `${detail.color}`, color: '#fff' }}
                     // icon={<WorkIcon />}
                 >
-                    <h3 className="vertical-timeline-element-title">Creative Director</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+                    <h3 className="vertical-timeline-element-title"><b>{detail.title}</b></h3>
+                    <h4 className="vertical-timeline-element-subtitle">{detail.subtitle}</h4>
                     <p>
-                        Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+                        {detail.description}
                     </p>
+                    <Text fontSize={'sm'} display={{base: "none" , md: "block"}}>{detail.date}</Text>
+
                 </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    date="2010 - 2011"
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    // icon={<WorkIcon />}
-                >
-                    <h3 className="vertical-timeline-element-title">Art Director</h3>
-                    <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-                    <p>
-                        Creative Direction, User Experience, Visual Design, SEO, Online Marketing
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    date="2008 - 2010"
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    // icon={<WorkIcon />}
-                >
-                    <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
-                    <p>
-                        User Experience, Visual Design
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    date="2006 - 2008"
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    // icon={<WorkIcon />}
-                >
-                    <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                    <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-                    <p>
-                        User Experience, Visual Design
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--education"
-                    date="April 2013"
-                    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                    // icon={<SchoolIcon />}
-                >
-                    <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-                    <p>
-                        Strategy, Social Media
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--education"
-                    date="November 2012"
-                    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                    // icon={<SchoolIcon />}
-                >
-                    <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-                    <p>
-                        Creative Direction, User Experience, Visual Design
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--education"
-                    date="2002 - 2006"
-                    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                    // icon={<SchoolIcon />}
-                >
-                    <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-                    <p>
-                        Creative Direction, Visual Design
-                    </p>
-                </VerticalTimelineElement>
+                    )
+                })}
+
                 <VerticalTimelineElement
                     iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
                     // icon={<StarIcon />}

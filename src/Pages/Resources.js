@@ -1,6 +1,7 @@
 import React from 'react'
 import ResourcesCard from '../Components/Resources/ResourcesCard'
 import pf from '../Assests/pf.png'
+import Demo from '../Assests/demo.jpg'
 import { Box, Heading, SimpleGrid } from '@chakra-ui/react'
 
 const Resource = ({ img, type, title, description }) => {
@@ -17,37 +18,37 @@ const Resource = ({ img, type, title, description }) => {
 export default function Resources() {
   const resources = [
     {
-      img: pf,
+      img: Demo,
       type: "Type 1",
       title: "Title 1",
       description: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
-      img: pf,
+      img: Demo,
       type: "Type 2",
       title: "Title 2",
       description: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
-      img: pf,
+      img: Demo,
       type: "Type 3",
       title: "Title 3",
       description: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
-      img: pf,
+      img: Demo,
       type: "Type 4",
       title: "Title 4",
       description: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
-      img: pf,
+      img: Demo,
       type: "Type 5",
       title: "Title 5",
       description: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
-      img: pf,
+      img: Demo,
       type: "Type 6",
       title: "Title 6",
       description: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
