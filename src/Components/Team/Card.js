@@ -31,7 +31,8 @@ export default function Pfcard(props) {
   return (
     <Center py={6}>
       <Box w="120%"
-        ml="20%">
+        margin={{ base: '4', md: '10' }}        
+        >
 
         <ScaleFade
           initialScale={0.6}
@@ -39,12 +40,12 @@ export default function Pfcard(props) {
         >
           <Box
             as={motion.div}
-            border={'1px'}
             maxW={'320px'}
             w={'full'}
             bg={useColorModeValue('white', 'gray.900')}
             boxShadow={'xl'}
             rounded={'lg'}
+            borderWidth={2}
             p={6}
             textAlign={'center'}
             // bgImage={bg}
@@ -60,6 +61,7 @@ export default function Pfcard(props) {
             _hover={{
               bgGradient: "linear(to-b, orange,white,white,green)",
               boxShadow: '2xl',
+              cursor: 'pointer',
               // bgImage: bg
             }}
             ref={ref}
