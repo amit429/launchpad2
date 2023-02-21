@@ -9,9 +9,17 @@ import {
   useColorModeValue,
   Img,
 } from '@chakra-ui/react';
+import { motion, Variants } from 'framer-motion';
 
 export default function ResourcesCard(props) {
+
   return (
+    <motion.div
+    initial={{x:-100, opacity:0}}
+    whileInView={{x:0, opacity:1}}
+    viewport={{once:true, amount:0.5}}
+    transition={{duration:0.5}}
+    >
     <Center py={6}>
       <Box
         maxW={'325px'}
@@ -70,5 +78,6 @@ export default function ResourcesCard(props) {
         </Stack> */}
       </Box>
     </Center>
+    </motion.div>
   );
 }
