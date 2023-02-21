@@ -3,6 +3,7 @@ import ResourcesCard from '../Components/Resources/ResourcesCard'
 import pf from '../Assests/pf.png'
 import Demo from '../Assests/demo.jpg'
 import { Box, Heading, SimpleGrid } from '@chakra-ui/react'
+import bg from '../Assests/background1.png'
 
 const Resource = ({ img, type, title, description }) => {
   return (
@@ -57,20 +58,27 @@ export default function Resources() {
   return (
     <>
       <Box
-      pt={{ base: 10, md: 20 }}
-      color="black"
-      textAlign="center"
+        pt={{ base: 10, md: 20 }}
+        color="black"
+        textAlign="center"
+        backgroundImage={bg}
       >
         <Heading
           as="h1"
           size="3xl"
           fontFamily="body"
           fontWeight="bold"
+          backgroundImage={bg}
         >
           Explore some Resources!
         </Heading>
       </Box>
-      <SimpleGrid columns={[1, 2, 3]} spacing="40px" mt="40px">
+      <SimpleGrid columns={[1, 2, 3]}
+        spacing="40px"
+        pt="40px"
+        backgroundImage={bg}
+        pl="1%"
+      >
         {resources.map((resource) => (
           <Resource
             img={resource.img}
