@@ -66,7 +66,7 @@ export default function Navbar() {
   return (
     <>
       <Box
-        bg={useColorModeValue("primary.100", "primary.300")}
+        bg={useColorModeValue("white", "primary.300")}
         px={4}
         style={{
           boxShadow: "0 0 10px rgba(0,0,0,0.2)",
