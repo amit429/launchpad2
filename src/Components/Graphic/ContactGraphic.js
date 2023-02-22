@@ -10,12 +10,20 @@ import {
     MdFacebook,
     MdOutlineEmail,
 } from 'react-icons/md';
+import { motion, Variants } from "framer-motion";
+
+
 const data = {
     title: {
         STARTUP_FOUNDER: ['Angel Investors', 'Venture Capitalists'],
         INVESTOR: ['Startup Founders', 'Amazing Innovators ']
     },
 
+}
+
+const L2RAnimate = {
+    offscreen: { x: -100, opacity: 0 },
+    onscreen: { x: 0, transition: { duration: 1 }, opacity: 1 },
 }
 
 const ContactGraphic = ({ role }) => {
@@ -101,6 +109,12 @@ const ContactGraphic = ({ role }) => {
         //     </HStack>
         // </Box>
         <Stack spacing={{ base: 5, md: 10 }}  >
+        <motion.div
+        initial={'offscreen'}
+        whileInView={'onscreen'}
+        viewport={{ once: true, amount: 0.1 }}
+        variants={L2RAnimate}
+        >
             <Heading
                 fontSize={{ base: '3xl', sm: '4xl', md: '5xl', lg: '6xl', xl: '7xl' }}
                 lineHeight={'110%'}
@@ -115,10 +129,13 @@ const ContactGraphic = ({ role }) => {
                 </Text>{' '}
                 {role === Roles.INVESTOR ? data.title.INVESTOR[1] : data.title.STARTUP_FOUNDER[1]}
             </Heading>
+        </motion.div>
+
             <Center>
                 <CurvedImage src={gif_link} width="60%" />
             </Center>
         </Stack>
+        
 
     );
 }

@@ -3,6 +3,12 @@ import { Box, Button, FormControl, FormErrorMessage, FormLabel, Heading, HStack,
 import { useState } from "react";
 import Roles from "../../classes/roles";
 import InputField from "../InputField/InputField";
+import { motion, Variants } from "framer-motion";
+
+const R2LAnimate = {
+    offscreen: { x: 100, opacity: 0 },
+    onscreen: { x: 0, transition: { duration: 1 }, opacity: 1 },
+}
 
 
 const EntryLevelForm = ({ title, subtitle, chooseRole, onSubmit }) => {
@@ -29,6 +35,12 @@ const EntryLevelForm = ({ title, subtitle, chooseRole, onSubmit }) => {
 
 
     return (
+        <motion.div
+        initial={'offscreen'}
+        whileInView={'onscreen'}
+        viewport={{ once: true, amount: 0.5 }}
+        variants={R2LAnimate}
+        >
         <Stack
             bg={'gray.50'}
             height={'min-content'}
@@ -124,6 +136,7 @@ const EntryLevelForm = ({ title, subtitle, chooseRole, onSubmit }) => {
                 </Button>
             </Box>
         </Stack>
+        </motion.div>
 
 
     );
