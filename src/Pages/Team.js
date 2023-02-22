@@ -4,6 +4,7 @@ import pf from "../Assests/pf.png";
 import Demo from '../Assests/demo.jpg'
 import Teamquote from "../Components/Team/Teamquote";
 import { SimpleGrid, Box, Stack, Heading } from "@chakra-ui/react";
+import bg from "../Assests/background1.png";
 
 const Team = ({ name, img, designation, linkedin,twitter }) => {
     return (
@@ -99,20 +100,25 @@ export default function Teams() {
                 pt={{ base: 10, md: 20 }}
                 color="black"
                 textAlign="center"
+                backgroundImage={bg}
+
             >
                 <Heading
                     as="h1"
                     size="3xl"
                     fontFamily="body"
                     fontWeight="bold"
+                backgroundImage={bg}
+                    
                 >
                     Meet our Team!
                 </Heading>
             </Box>
             <SimpleGrid
                 columns={{ base: 1, md: 3 }}
-                spacing={2}
-                m={{ base: 5, md: 8 }}
+                spacing={1}
+                // m={{ base: 5, md: 8 }}
+                backgroundImage={bg}
             >
                 {team.map((member) => (
                     <Team

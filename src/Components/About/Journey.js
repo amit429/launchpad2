@@ -16,6 +16,17 @@ import {
   IoSearchSharp,
 } from 'react-icons/io5';
 import { ReactElement } from 'react';
+import {motion, variants} from 'framer-motion';
+
+const textAnimate = {
+  offscreen: { y: 75, opacity: 0 },
+  onscreen: { y: 0, transition: { duration: 1 }, opacity: 1 },
+}
+
+const imgAnimate = {
+  offscreen: { x: 100, opacity: 0 },
+  onscreen: { x: 0, transition: { duration: 1 }, opacity: 1 },
+}
 
 
 // const Feature = ({ text, icon, iconBg }) => {
@@ -39,6 +50,12 @@ export default function Journey() {
   return (
     <Container maxW={'7xl'} py={12} mt={10}>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
+        <motion.div
+        initial={'offscreen'}
+        whileInView={'onscreen'}
+        viewport={{ once: true, amount: 0.1}}
+        variants={textAnimate}
+        >
         <Stack spacing={4}>
           <Text
             textTransform={'uppercase'}
@@ -76,7 +93,16 @@ export default function Journey() {
             }>
           </Stack>
         </Stack>
-        <Flex>
+        </motion.div>
+        <motion.div
+        initial={'offscreen'}
+        whileInView={'onscreen'}
+        viewport={{ once: true, amount: 0.1}}
+        variants={imgAnimate}
+        >
+        <Flex
+        h={'100%'}
+        >
           <Image
             rounded={'md'}
             alt={'feature image'}
@@ -86,6 +112,7 @@ export default function Journey() {
             objectFit={'cover'}
           />
         </Flex>
+        </motion.div>
       </SimpleGrid>
     </Container>
   );
