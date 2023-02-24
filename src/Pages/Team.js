@@ -30,48 +30,36 @@ const Team = ({ name, img, designation, linkedin,twitter }) => {
 export default function Teams() {
     const team = [
         {
-            name: "Name 1",
+            name: "Dr Ram ",
             img: Demo,
-            designation: "Designation 1",
-            linkedin: "https://www.linkedin.com/",
+            designation: "COO",
+            linkedin: "https://www.linkedin.com/in/dr-ram",
             twitter: "https://www.twitter.com/"
         },
         {
-            name: "Name 2",
+            name: "Sunny Wadhwani ",
             img: Demo,
-            designation: "Designation 2",
-            linkedin: "https://www.linkedin.com/",
+            designation: "CFO",
+            linkedin: "https://www.linkedin.com/in/sunny-wadhwani-2aa77012/",
             twitter: "https://www.twitter.com/"
         },
         {
-            name: "Name 3",
+            name: "Prashant Iyer",
             img: Demo,
-            designation: "Designation 3",
-            linkedin: "https://www.linkedin.com/",
+            designation: "Asst Director – Startup Accelerator",
+            linkedin: "https://www.linkedin.com/in/prashant-iyer/",
             twitter: "https://www.twitter.com/"
         },
         {
-            name: "Name 4",
+            name: "Sonia Nagdeo ",
             img: Demo,
-            designation: "Designation 4",
-            linkedin: "https://www.linkedin.com/",
+            designation: "Manager – Research & Innovation",
+            linkedin: "https://www.linkedin.com/in/soniya-nagdeo/",
             twitter: "https://www.twitter.com/"
         },
     ]
 
-    const team2 = [
-        {
-            name: "Name 5",
-            img: Demo,
-            designation: "Designation 5",
-        },
-
-        {
-            name: "Name 6",
-            img: Demo,
-            designation: "Designation 6",
-        }
-    ]
+    
     return (
         <>
             <Teamquote />
