@@ -66,23 +66,20 @@ export default function Journey() {
             p={2}
             alignSelf={'flex-start'}
             rounded={'md'}>
-            Our Story
+            About Us
           </Text>
-          <Heading color={"green.800"}>A digital Product design agency</Heading>
+          <Heading color={"green.800"}>A Platform designed for all</Heading>
           <Text color={'gray.500'} fontSize={'md'}>
-            One of the most important journeys a company can take is the path to success. This journey starts with planning and strategy, which involves setting goals and objectives and determining how to reach them. Furthermore, companies must identify the resources necessary to implement the plan, such as technology and personnel.
-          </Text>
-          <Text color={'gray.500'} fontSize={'md'}>
-            Once a company has a solid plan in place, the focus then shifts to implementation. This is where the goals and objectives turn into reality.
+          Launchpad Startups is a platform designed to support early-stage entrepreneurs and their ventures. As an entrepreneur, starting a business can be challenging, and Launchpad Startups aims to provide resources and support to help entrepreneurs succeed. Launchpad Startups provides seed funding, as well as access to investors who are interested in supporting early-stage startups. Entrepreneurs can also participate in pitch events, where they can present their businesses to potential investors.
           </Text>
           <Text color={'gray.500'} fontSize={'md'}>
-            Companies must ensure that the resources are being used efficiently and effectively to reach the desired results.
-            Marketing is also a key component of this journey.
-            Companies need to find a way to reach their target audiences, create a brand identity, and promote their products and services. In addition, companies must stay ahead of their competitors and monitor trends to remain competitive.
+          The platform offers a range of services, including mentorship, funding opportunities, and access to a network of experts and industry professionals. Entrepreneurs can apply to join Launchpad Startups, and if accepted, they will have access to all these resources.
           </Text>
           <Text color={'gray.500'} fontSize={'md'}>
-            Finally, a company's journey must include an evaluation process. This involves assessing the success of the strategies used, the goals achieved, and the performance of the team. Companies need to make sure that they are meeting the expectations of their customers.
-            By taking the time to plan, implement, market. and evaluate, companies can ensure that they are on the right path to success.
+          One of the key benefits of Launchpad Startups is the mentorship program. Entrepreneurs are paired with experienced mentors who can provide guidance and support as they navigate the early stages of their ventures. Mentors can help entrepreneurs refine their business ideas, develop their business plans, and provide feedback on their progress.
+          </Text>
+          <Text color={'gray.500'} fontSize={'md'}>
+          Overall, Launchpad Startups is a valuable platform for early-stage entrepreneurs who are looking for support and resources to help them succeed. With mentorship, funding opportunities, and access to a network of experts, entrepreneurs can accelerate the growth of their ventures and achieve their goals.
           </Text>
           <Stack
             spacing={4}

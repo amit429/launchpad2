@@ -29,9 +29,9 @@ export default function Pfcard(props) {
   );
 
   return (
-    <Center py={6}>
+    <Center m={{base: '8' , md: '8'}} py={6}>
       <Box w="120%"
-        margin={{ base: '4', md: '10' }}        
+        margin={{ base: '4', md: '7' }}        
         >
 
         <ScaleFade
@@ -169,14 +169,14 @@ export default function Pfcard(props) {
                   </Center>
                 </Button>
 
-                <Button colorScheme='twitter' leftIcon={<SiTwitter />}
+                {/* <Button colorScheme='twitter' leftIcon={<SiTwitter />}
                   maxW={'sm'}
                   mb={2}
                   onClick={() => window.open(props.twitter, "_blank")} >
                   <Center>
                     <Text>Twitter</Text>
                   </Center>
-                </Button>
+                </Button> */}
               </Stack>
             </Center>
             {/* </Stack> */}

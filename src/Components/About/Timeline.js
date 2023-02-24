@@ -18,7 +18,7 @@ export default function Timeline() {
         {
             title: 'Creative Director',
             subtitle: 'Miami, FL',
-            description: 'Creative Direction, User Experience, Visual Design, Project Management, Team Leading',
+            description: 'Launchpad Startups provides seed funding, as well as access to investors who are interested in supporting early-stage startups.',
             date: '2011 - present',
             color: "rgb(240, 149, 65)"
         },
@@ -26,7 +26,7 @@ export default function Timeline() {
         {
             title: 'Art Director',
             subtitle: 'San Francisco, CA',
-            description: 'Creative Direction, User Experience, Visual Design, SEO, Online Marketing',
+            description: 'Entrepreneurs can also participate in pitch events, where they can present their businesses to potential investors.',
             date: '2010 - 2011',
             color : "rgb(28, 37, 71)"
         },
@@ -34,7 +34,7 @@ export default function Timeline() {
         {
             title: 'Web Designer',
             subtitle: 'Los Angeles, CA',
-            description: 'User Experience, Visual Design',
+            description: 'The platform offers a range of services, including mentorship, funding opportunities, and access to a network of experts and industry professionals. ',
             date: '2008 - 2010',
             color: "rgb(56, 102, 68)"
         },
@@ -42,7 +42,7 @@ export default function Timeline() {
         {
             title: 'Web Designer',
             subtitle: 'San Francisco, CA',
-            description: 'User Experience, Visual Design',
+            description: 'One of the key benefits of Launchpad Startups is the mentorship program. Entrepreneurs are paired with experienced mentors who can provide guidance and support as they navigate the early stages of their ventures. ',
             date: '2006 - 2008',
             color: "rgb(240, 149, 65)"
         },
@@ -50,7 +50,7 @@ export default function Timeline() {
         {
             title: 'Graphic Designer',
             subtitle: 'London, UK',
-            description: 'User Experience, Visual Design',
+            description: 'Launchpad Startups provides access to a network of experts and industry professionals. Entrepreneurs can attend events and workshops, where they can learn from experienced entrepreneurs and gain insights into the startup ecosystem.',
             date: '2004 - 2006',
             color : "rgb(28, 37, 71)"
         },
@@ -58,7 +58,7 @@ export default function Timeline() {
         {
             title: 'Graphic Artist',
             subtitle: 'San Francisco, CA',
-            description: 'User Experience, Visual Design',
+            description: 'With mentorship, funding opportunities, and access to a network of experts, entrepreneurs can accelerate the growth of their ventures and achieve their goals.',
             date: '2002 - 2004',
             color: "rgb(56, 102, 68)"
         },
@@ -80,7 +80,7 @@ export default function Timeline() {
             fontFamily={'Sans-serif'}
             fontWeight={'bold'}
             color={useColorModeValue('blue.900', 'blue.50')}>
-            Our Timeline
+             Launchpad Benefits
           </chakra.h1>
           </Box>
         </Flex>
@@ -97,12 +97,12 @@ export default function Timeline() {
                     iconStyle={{ background: `${detail.color}`, color: '#fff' }}
                     // icon={<WorkIcon />}
                 >
-                    <h3 className="vertical-timeline-element-title"><b>{detail.title}</b></h3>
-                    <h4 className="vertical-timeline-element-subtitle">{detail.subtitle}</h4>
+                    {/* <h3 className="vertical-timeline-element-title"><b>{detail.title}</b></h3>
+                    <h4 className="vertical-timeline-element-subtitle">{detail.subtitle}</h4> */}
                     <p>
                         {detail.description}
                     </p>
-                    <Text fontSize={'sm'} display={{base: "none" , md: "block"}}>{detail.date}</Text>
+                    {/* <Text fontSize={'sm'} display={{base: "none" , md: "block"}}>{detail.date}</Text> */}
 
                 </VerticalTimelineElement>
                     )
