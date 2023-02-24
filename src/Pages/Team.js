@@ -57,42 +57,21 @@ export default function Teams() {
             linkedin: "https://www.linkedin.com/",
             twitter: "https://www.twitter.com/"
         },
+    ]
+
+    const team2 = [
         {
             name: "Name 5",
             img: Demo,
             designation: "Designation 5",
-            linkedin: "https://www.linkedin.com/",
-            twitter: "https://www.twitter.com/"
         },
+
         {
             name: "Name 6",
             img: Demo,
             designation: "Designation 6",
-            linkedin: "https://www.linkedin.com/",
-            twitter: "https://www.twitter.com/"
-        },
-        {
-            name: "Name 7",
-            img: Demo,
-            designation: "Designation 7",
-            linkedin: "https://www.linkedin.com/",
-            twitter: "https://www.twitter.com/"
-        },
-        {
-            name: "Name 8",
-            img: Demo,
-            designation: "Designation 8",
-            linkedin: "https://www.linkedin.com/",
-            twitter: "https://www.twitter.com/"
-        },
-        {
-            name: "Name 9",
-            img: Demo,
-            designation: "Designation 9",
-            linkedin: "https://www.linkedin.com/",
-            twitter: "https://www.twitter.com/"
         }
-        ]
+    ]
     return (
         <>
             <Teamquote />
@@ -102,7 +81,8 @@ export default function Teams() {
                 textAlign="center"
                 backgroundImage={bg}
 
-            >
+            >  
+
                 <Heading
                     as="h1"
                     size="3xl"
@@ -113,12 +93,12 @@ export default function Teams() {
                 >
                     Meet our Team!
                 </Heading>
-            </Box>
-            <SimpleGrid
-                columns={{ base: 1, md: 3 }}
+
+                <SimpleGrid
+                columns={{ base: 1, md: 4 }}
                 spacing={1}
                 // m={{ base: 5, md: 8 }}
-                backgroundImage={bg}
+                //backgroundImage={bg}
             >
                 {team.map((member) => (
                     <Team
@@ -130,6 +110,8 @@ export default function Teams() {
                     />
                 ))}
             </SimpleGrid>
+            </Box>
+            
         </>
     )
 }

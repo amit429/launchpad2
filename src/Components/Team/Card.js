@@ -29,7 +29,9 @@ export default function Pfcard(props) {
   );
 
   return (
-    <Center m={{base: '8' , md: '8'}} py={6}>
+    <Center  py={6}
+      margin={{ base: '8' , md: "none"}}
+    >
       <Box w="120%"
         margin={{ base: '4', md: '7' }}        
         >
