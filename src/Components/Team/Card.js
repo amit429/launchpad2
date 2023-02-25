@@ -11,87 +11,76 @@ import {
   useColorModeValue,
   keyframes,
   ScaleFade,
-} from '@chakra-ui/react';
-import { SiLinkedin, SiTwitter } from 'react-icons/si';
-import { motion } from 'framer-motion'
-import bg from '../../Assests/team.gif'
-import { useInViewport } from 'react-in-viewport';
-import React, { useRef } from 'react';
+} from "@chakra-ui/react";
+import { SiLinkedin, SiTwitter } from "react-icons/si";
+import { motion } from "framer-motion";
+import bg from "../../Assests/team.gif";
+import { useInViewport } from "react-in-viewport";
+import React, { useRef } from "react";
 
 export default function Pfcard(props) {
-
   const ref = useRef(null);
   const { enterCount } = useInViewport(
     ref,
-    { rootMargin: '-100px' },
+    { rootMargin: "-100px" },
     { disconnectOnLeave: false },
     {}
   );
 
   return (
-    <Center  py={6}
-      margin={{ base: '8' , md: "2"}}
-    >
-      <Box w="120%"
-        margin={{ base: '4', md: '7' }}        
-        >
-
-        <ScaleFade
-          initialScale={0.6}
-          in={enterCount > 0}
-        >
+    <Center py={6} margin={{ base: "8", md: "2" }}>
+      <Box w="120%" margin={{ base: "4", md: "7" }}>
+        <ScaleFade initialScale={0.6} in={enterCount > 0}>
           <Box
             as={motion.div}
-            maxW={'320px'}
-            w={'full'}
-            bg={useColorModeValue('white', 'gray.900')}
-            boxShadow={'xl'}
-            rounded={'lg'}
+            maxW={"320px"}
+            w={"full"}
+            bg={useColorModeValue("white", "gray.900")}
+            boxShadow={"xl"}
+            rounded={"lg"}
             borderWidth={2}
             p={6}
-            textAlign={'center'}
+            textAlign={"center"}
             // bgImage={bg}
             // filter='auto'
-            backdropFilter='auto'
-            backdropBlur='6px'
+            //backdropFilter='auto'
+            //backdropBlur='6px'
             whileHover={{
               scale: 1.05,
             }}
             transition={{ duration: 0.5 }}
-            bgSize='cover'
-            animation={'background-gradient 5s'}
+            bgSize="cover"
+            animation={"background-gradient 5s"}
             _hover={{
               bgGradient: "linear(to-b, orange,white,white,green)",
-              boxShadow: '2xl',
-              cursor: 'pointer',
+              boxShadow: "2xl",
+              cursor: "pointer",
               // bgImage: bg
             }}
             ref={ref}
           >
             <Avatar
-              size={'xl'}
-              src={
-                props.img
-              }
+              size={"xl"}
+              src={props.img}
               alt={props.name}
               mb={4}
-              pos={'relative'}
-            // _after={{
-            //     content: '""',
-            //     w: 4,
-            //     h: 4,
-            //     bg: 'green.300',
-            //     border: '2px solid white',
-            //     rounded: 'full',
-            //     pos: 'absolute',
-            //     bottom: 0,
-            //     right: 3,
-            // }}
+              pos={"relative"}
+              // _after={{
+              //     content: '""',
+              //     w: 4,
+              //     h: 4,
+              //     bg: 'green.300',
+              //     border: '2px solid white',
+              //     rounded: 'full',
+              //     pos: 'absolute',
+              //     bottom: 0,
+              //     right: 3,
+              // }}
             />
-            <Heading fontSize={'2xl'} fontFamily={'body'}>
+            <Heading fontSize={"2xl"} fontFamily={"body"}>
               {props.name}
             </Heading>
-            <Text fontWeight={600} color={'gray.500'} mb={4}>
+            <Text fontWeight={600} color={"gray.500"} mb={4}>
               {props.designation}
             </Text>
             {/* <Text
@@ -160,9 +149,9 @@ export default function Pfcard(props) {
               <Stack>
                 <Button
                   // w={'full'}
-                  maxW={'sm'}
+                  maxW={"sm"}
                   mb={2}
-                  colorScheme={'messenger'}
+                  colorScheme={"messenger"}
                   leftIcon={<SiLinkedin />}
                   onClick={() => window.open(props.linkedin, "_blank")}
                 >
@@ -182,10 +171,9 @@ export default function Pfcard(props) {
               </Stack>
             </Center>
             {/* </Stack> */}
-          </Box >
+          </Box>
         </ScaleFade>
-
       </Box>
-    </Center >
+    </Center>
   );
 }
