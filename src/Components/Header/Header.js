@@ -23,7 +23,7 @@ import "@fontsource/roboto";
 //   return useTransform(value, [0, 1], [-distance, distance]);
 // }
 
-export default function Header() {
+export default function Header(props) {
 
   // const ref = useRef(null);
   // const { scrollYProgress } = useScroll({ target: ref });
@@ -57,13 +57,15 @@ export default function Header() {
           <Box margin={"auto"}>
             <iframe
               className="animation"
-              src="https://embed.lottiefiles.com/animation/94515"
+              src={props.gif}
             ></iframe>
           </Box>
         </Flex>
         <Flex p={1} align={"center"} justify={"center"}>
           <Stack spacing={6} w={"full"} maxW={"lg"}>
-            <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
+            <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
+              textAlign={{ base: "center", md: "left" }}
+            >
               <Text
                 as={"span"}
                 position={"relative"}
@@ -74,10 +76,12 @@ export default function Header() {
               </Text>
               <br />{" "}
               <Text color={"blue.900"} as={"span"}>
-                Meet Startups
+                {props.text}
               </Text>{" "}
             </Heading>
-            <Text fontSize={{ base: "md", lg: "md" }} color={"gray.500"}>
+            <Text fontSize={{ base: "md", lg: "md" }} color={"gray.500"}
+              textAlign={{ base: "center", md: "left" }}
+            >
               LaunchPad is a platform for startups to connect with investors and
               other startups. We provide a platform for startups to showcase
               their ideas and get feedback from the community. We also provide a

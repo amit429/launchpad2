@@ -1,7 +1,7 @@
 import React from 'react'
 import { ReactElement } from 'react';
 import { Box, SimpleGrid, Icon, Text, Stack, Flex, Heading } from '@chakra-ui/react';
-import { FcAssistant, FcDonate, FcInTransit } from 'react-icons/fc';
+import { FcProcess, FcWorkflow, FcPositiveDynamic } from 'react-icons/fc';
 import { motion, Variants } from 'framer-motion';
 
 const imageAnimate = {
@@ -65,37 +65,37 @@ export default function Goals() {
     {
       title: 'Lifetime Support',
       text: "Bharat First Approach for Startups is about creating solutions that are both innovative and relevant to the unique needs of the Indian market. ",
-      icon: <Icon as={FcAssistant} w={10} h={10} />,
+      icon: <Icon as={FcProcess} w={10} h={10} />,
     },
 
     {
       title: 'Unlimited Donations',
       text: "Transforming Businesses through the Power of People, Technology and Innovation",
-      icon: <Icon as={FcDonate} w={10} h={10} />,
+      icon: <Icon as={FcWorkflow} w={10} h={10} />,
     },
 
     {
       title: 'In Transit',
       text: "Enabling startups to improve their business strategy, organization and to be successful and raise capital for expansion & growth",
-      icon: <Icon as={FcInTransit} w={10} h={10} />,
+      icon: <Icon as={FcPositiveDynamic} w={10} h={10} />,
     },
 
     {
       title: 'Lifetime Support',
       text: "Promoting entrepreneurship and innovation that generates employment opportunities and drives growth in rural and underdeveloped areas of India",
-      icon: <Icon as={FcAssistant} w={10} h={10} />,
+      icon: <Icon as={FcProcess} w={10} h={10} />,
     },
 
     {
       title: 'Unlimited Donations',
       text: "Focus is on leveraging technology to create innovative solutions that are not only accessible and affordable but also sustainable. ",
-      icon: <Icon as={FcDonate} w={10} h={10} />,
+      icon: <Icon as={FcWorkflow} w={10} h={10} />,
     },
 
     {
       title: 'In Transit',
       text: "Launchpad Startups aims to provide resources and support to help entrepreneurs succeed.",
-      icon: <Icon as={FcInTransit} w={10} h={10} />,
+      icon: <Icon as={FcPositiveDynamic} w={10} h={10} />,
     }
   ]
   return (

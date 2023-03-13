@@ -11,8 +11,14 @@ import {
   useColorModeValue,
   keyframes,
   ScaleFade,
+  SimpleGrid,
+  Flex,
+  Image,
+  HStack,
+  VStack,
 } from "@chakra-ui/react";
 import { SiLinkedin, SiTwitter } from "react-icons/si";
+import { FaSuitcase, FaMapPin, FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
 import bg from "../../Assests/team.gif";
 import { useInViewport } from "react-in-viewport";
@@ -20,138 +26,116 @@ import React, { useRef } from "react";
 
 export default function Pfcard(props) {
   const ref = useRef(null);
-  const { enterCount } = useInViewport(
-    ref,
-    { rootMargin: "-100px" },
-    { disconnectOnLeave: false },
-    {}
-  );
-
+  
   return (
-    <Center py={6} margin={{ base: "8", md: "2" }}>
-      <Box w="120%" margin={{ base: "4", md: "7" }}>
-        <ScaleFade initialScale={0.6} in={enterCount > 0}>
-          <Box
-            as={motion.div}
-            maxW={"320px"}
-            w={"full"}
-            bg={useColorModeValue("white", "gray.900")}
-            boxShadow={"xl"}
-            rounded={"lg"}
-            borderWidth={2}
-            p={6}
-            textAlign={"center"}
-            // bgImage={bg}
-            // filter='auto'
-            //backdropFilter='auto'
-            //backdropBlur='6px'
-            whileHover={{
-              scale: 1.05,
+    <Flex
+      //bg="#edf3f8"
+      _dark={{
+        bg: "#3e3e3e",
+      }}
+      p={50}
+      w="full"
+      alignItems="center"
+      justifyContent="center"
+    >
+      <Flex
+        shadow="lg"
+        rounded="lg"
+        bg="#edf3f8"
+        mb={8}
+        w="full"
+        h={{ base: "auto", md: "90%" }}
+        direction="column"
+        alignItems="center"
+        justifyContent="center"
+        as={motion.div}
+        whileHover={{
+          scale: 1.05,
+        }}
+        transition={{ duration: 0.5 }}
+        bgSize='cover'
+        animation={'background-gradient 5s'}
+        _hover={{
+          bgGradient: "linear(to-b, orange,white,white,green)",
+          boxShadow: '2xl',
+          cursor: 'pointer',
+          // bgImage: bg
+        }}
+      >
+        <Box
+          bg="#edf3f8"
+          _dark={{
+            bg: "#3e3e3e",
+          }}
+          style={{
+            backgroundImage:
+              "url(http://mit-wpu.managementquotainfo.in/wp-content/uploads/sites/2/2019/12/MIT-WPU.jpg)",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+          height="100%"
+          width="100%"
+          borderRadius="lg"
+          p={8}
+          display="flex"
+          alignItems="left"
+        >
+          <Image
+            src= {props.img}
+            alt="Profile Picture"
+            borderRadius="full"
+            boxSize="120px"
+            shadow="lg"
+            border="5px solid"
+            mb={-20}
+            borderColor="gray.800"
+          />
+        </Box>
+        <Box
+          gridColumn="span 8"
+          p={8}
+          width="full"
+          height="full"
+          borderRadius="lg"
+          textAlign="left"
+          mt={7}
+        >
+          <Text
+            fontSize="2xl"
+            fontWeight="bold"
+            align={{ base: "left", md: "left"}}
+            color="gray.800"
+            _dark={{
+              color: "white",
             }}
-            transition={{ duration: 0.5 }}
-            bgSize="cover"
-            animation={"background-gradient 5s"}
-            _hover={{
-              bgGradient: "linear(to-b, orange,white,white,green)",
-              boxShadow: "2xl",
-              cursor: "pointer",
-              // bgImage: bg
-            }}
-            ref={ref}
           >
-            <Avatar
-              size={"xl"}
-              src={props.img}
-              alt={props.name}
-              mb={4}
-              pos={"relative"}
-              // _after={{
-              //     content: '""',
-              //     w: 4,
-              //     h: 4,
-              //     bg: 'green.300',
-              //     border: '2px solid white',
-              //     rounded: 'full',
-              //     pos: 'absolute',
-              //     bottom: 0,
-              //     right: 3,
-              // }}
-            />
-            <Heading fontSize={"2xl"} fontFamily={"body"}>
-              {props.name}
-            </Heading>
-            <Text fontWeight={600} color={"gray.500"} mb={4}>
+            {props.name}
+          </Text>
+          <HStack
+            spacing={3}
+            color="gray.800"
+            _dark={{
+              color: "gray.200",
+            }}
+          >
+            <Text
+              fontSize="lg"
+              //fontWeight="bold"
+              align={{ base: "left", md: "left" }}
+              color="gray.800"
+            >
               {props.designation}
             </Text>
-            {/* <Text
-                    textAlign={'center'}
-                    color={useColorModeValue('gray.700', 'gray.400')}
-                    px={3}>
-                    Actress, musician, songwriter and artist. PM for work inquires or{' '}
-                    <Link href={'#'} color={'blue.400'}>
-                        #tag
-                    </Link>{' '}
-                    me in your posts
-                </Text> */}
+          </HStack>
 
-            {/* <Stack align={'center'} justify={'center'} direction={'row'} mt={6}>
-            <Badge
-              px={2}
-              py={1}
-              bg={useColorModeValue('gray.50', 'gray.800')}
-              fontWeight={'400'}>
-              #art
-            </Badge>
-            <Badge
-              px={2}
-              py={1}
-              bg={useColorModeValue('gray.50', 'gray.800')}
-              fontWeight={'400'}>
-              #photography
-            </Badge>
-            <Badge
-              px={2}
-              py={1}
-              bg={useColorModeValue('gray.50', 'gray.800')}
-              fontWeight={'400'}>
-              #music
-            </Badge>
-          </Stack> */}
-
-            {/* <Stack mt={8} direction={'row'} spacing={4}> */}
-            {/* <Button
-              flex={1}
-              fontSize={'sm'}
-              rounded={'full'}
-              _focus={{
-                bg: 'gray.200',
-              }}>
-              Message
-            </Button> */}
-            {/* <Button
-              flex={1}
-              fontSize={'sm'}
-              rounded={'full'}
-              bg={'blue.400'}
-              color={'white'}
-              boxShadow={
-                '0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)'
-              }
-              _hover={{
-                bg: 'blue.500',
-              }}
-              _focus={{
-                bg: 'blue.500',
-              }}>
-              Follow
-            </Button> */}
-            <Center>
-              <Stack>
+              <Stack
+                mt={4}
+              >
                 <Button
-                  // w={'full'}
-                  maxW={"sm"}
+                  maxW={'sm'}
                   mb={2}
-                  colorScheme={"messenger"}
+                  colorScheme={'messenger'}
                   leftIcon={<SiLinkedin />}
                   onClick={() => window.open(props.linkedin, "_blank")}
                 >
@@ -159,21 +143,10 @@ export default function Pfcard(props) {
                     <Text>Linkedin</Text>
                   </Center>
                 </Button>
-
-                {/* <Button colorScheme='twitter' leftIcon={<SiTwitter />}
-                  maxW={'sm'}
-                  mb={2}
-                  onClick={() => window.open(props.twitter, "_blank")} >
-                  <Center>
-                    <Text>Twitter</Text>
-                  </Center>
-                </Button> */}
               </Stack>
-            </Center>
-            {/* </Stack> */}
-          </Box>
-        </ScaleFade>
-      </Box>
-    </Center>
+
+        </Box>
+      </Flex>
+    </Flex>
   );
 }

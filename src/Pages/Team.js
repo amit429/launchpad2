@@ -6,6 +6,7 @@ import Teamquote from "../Components/Team/Teamquote";
 import { SimpleGrid, Box, Stack, Heading } from "@chakra-ui/react";
 import bg from "../Assests/background1.png";
 import Card2 from "../Components/Team/Card2";
+import Header from "../Components/Header/Header";
 
 const Team = ({ name, img, designation, linkedin, twitter }) => {
   return (
@@ -22,7 +23,6 @@ const Team = ({ name, img, designation, linkedin, twitter }) => {
       img={img}
       designation={designation}
       linkedin={linkedin}
-      twitter={twitter}
     />
     // </Stack>
   );
@@ -33,20 +33,20 @@ export default function Teams() {
     {
       name: "Dr Ram ",
       img: "https://media.licdn.com/dms/image/C4E03AQE99qKwDBxBsA/profile-displayphoto-shrink_400_400/0/1604822425913?e=1682553600&v=beta&t=0CJCgQNWcAT4c31FXJ6lGfHRM3Ct9g843ya2PSBdTNk",
-      designation: "COO",
+      designation: "Chief Operating Officer",
       linkedin: "https://www.linkedin.com/in/dr-ram",
       twitter: "https://www.twitter.com/",
     },
     {
       name: "Sunny Wadhwani ",
       img: "https://media.licdn.com/dms/image/D4D03AQHaS2Bd2rOcVg/profile-displayphoto-shrink_400_400/0/1673857314132?e=1682553600&v=beta&t=xsmxzNnFPMv7Zmh9qXYezRiMFafidhQYPf9CsFcvGA4",
-      designation: "CFO",
+      designation: "Chief Financial Officer",
       linkedin: "https://www.linkedin.com/in/sunny-wadhwani-2aa77012/",
       twitter: "https://www.twitter.com/",
     },
     {
       name: "Prashant Iyer",
-      img: "https://media.licdn.com/dms/image/C4E03AQHXHQU0_N4tQw/profile-displayphoto-shrink_400_400/0/1581656267160?e=1682553600&v=beta&t=U23WB49GOnEZby1U63quRJqDQIj48itaCRRXsTFOJEs",
+      img: "https://media.licdn.com/dms/image/D4D03AQHkY82fneiBwQ/profile-displayphoto-shrink_400_400/0/1678340473179?e=1683763200&v=beta&t=A4FVfChvgNtuOlQSukqJqtpiReEIJRmCdtk6CgqlzHg",
       designation: "Asst Director – Startup Accelerator",
       linkedin: "https://www.linkedin.com/in/prashant-iyer/",
       twitter: "https://www.twitter.com/",
@@ -62,7 +62,12 @@ export default function Teams() {
 
   return (
     <>
-      <Teamquote />
+      {/* <Teamquote /> */}
+      <Header
+        gif = "https://embed.lottiefiles.com/animation/94021"
+        text='Meet Our Team'
+      />
+
       <Box
         pt={{ base: 10, md: 20 }}
         color="black"
@@ -102,7 +107,7 @@ export default function Teams() {
 
         <SimpleGrid
           columns={{ base: 1, md: 4 }}
-          spacing={1}
+          //spacing={1}
           // m={{ base: 5, md: 8 }}
           //backgroundImage={bg}
         >
@@ -112,7 +117,6 @@ export default function Teams() {
               img={member.img}
               designation={member.designation}
               linkedin={member.linkedin}
-              twitter={member.twitter}
             />
           ))}
         </SimpleGrid>

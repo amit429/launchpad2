@@ -6,42 +6,22 @@ import Quote from "../Components/Home/Quote component/Quote";
 import Aboutwpu from "../Components/Home/Aboutwpu/Aboutwpu";
 import Goals from "../Components/Home/Goals/Goals";
 import Vision from "../Components/Home/Vision/Vision";
-import { Parallax } from 'react-scroll-parallax';
+import { Parallax } from "react-scroll-parallax";
 import Header from "../Components/Header/Header";
 
 const Home = () => {
-
-    const [loading, setLoading] = useState(false);
-
-    const loadData = async () => {
-
-        setTimeout(() => {
-            setLoading(false);
-        }, 8000);
-
-    }
-
-    useEffect(() => {
-        //loadData();
-    }, [])
-
-    if (loading) {
-        return (
-            <></>
-        )
-    }
-
-    else {
-        return (
-            <>
-                <Header />
-                <Quote />
-                <Aboutwpu />
-                <Goals />
-                <Vision />
-            </>
-        )
-    }
-}
+  return (
+    <>
+      <Header
+        gif="https://embed.lottiefiles.com/animation/94515"
+        text="Meet Startups"
+      />
+      <Quote />
+      <Aboutwpu />
+      <Goals />
+      <Vision />
+    </>
+  );
+};
 
 export default Home;

@@ -3,6 +3,7 @@ import Company from '../Components/Portfolio/Company'
 import ImageSlider from '../Components/Portfolio/ImageSlider'
 import logo from '../Assests/Launchpad Startups colored.png'
 import { SimpleGrid , Box , Stack, Heading } from '@chakra-ui/react'
+import Header from '../Components/Header/Header'
 
 const Companies = ({name , img}) =>{
   return(
@@ -60,6 +61,10 @@ export default function Portfolio() {
   ]
   return (
     <>
+      <Header
+        gif='https://embed.lottiefiles.com/animation/105491'
+        text='Our Portfolio'
+      />
       <ImageSlider/>
       <Box p={{ base: 0  , md: 6}} mb={8}>
         <Heading

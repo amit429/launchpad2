@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import { ChakraProvider } from '@chakra-ui/react';
+import { useEffect, useState } from 'react';
+import Loader from './Components/Loading Screen/Loader';
 import { BrowserRouter as Router, Switch, Route , Routes } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Pages/Home';
@@ -16,6 +18,28 @@ import { launchPadTheme } from './Styles/theme';
 //Hello
 
 function App() {
+
+  const [loading, setLoading] = useState(true);
+
+  const loadData = async () => {
+
+    setTimeout(() => {
+        setLoading(false);
+    }, 7000);
+
+}
+
+useEffect(() => {
+    loadData();
+}, [])
+
+if (loading) {
+    return (
+        <Loader/>
+    )
+}
+
+else {
   return (
     <>
       <ChakraProvider theme={launchPadTheme}>
@@ -38,6 +62,7 @@ function App() {
     
     </>
   );
+  }
 }
 
 export default App;
