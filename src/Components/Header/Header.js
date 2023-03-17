@@ -55,10 +55,10 @@ export default function Header(props) {
       >
         <Flex>
           <Box margin={"auto"}>
-            <iframe
+            <Image
               className="animation"
               src={props.gif}
-            ></iframe>
+            ></Image>
           </Box>
         </Flex>
         <Flex p={1} align={"center"} justify={"center"}>

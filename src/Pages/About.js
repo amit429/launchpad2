@@ -3,12 +3,13 @@ import Journey from '../Components/About/Journey'
 import Testimonials from '../Components/About/Testimonials'
 import Timeline from '../Components/About/Timeline'
 import Header from '../Components/Header/Header'
+import Aboutgif from '../Assests/AboutHeader.gif'
 
 export default function About() {
   return (
     <>
     <Header
-      gif="https://embed.lottiefiles.com/animation/91238"
+      gif={Aboutgif}
       text = 'About Us'
     />
     <Journey />
