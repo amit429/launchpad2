@@ -56,7 +56,7 @@ export default function Pfcard(props) {
         bgSize='cover'
         animation={'background-gradient 5s'}
         _hover={{
-          bgGradient: "linear(to-b, orange,white,white,green)",
+          bgGradient: "linear(to-b, orange,white,green.100)",
           boxShadow: '2xl',
           cursor: 'pointer',
           // bgImage: bg
