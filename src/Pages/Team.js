@@ -7,6 +7,7 @@ import { SimpleGrid, Box, Stack, Heading } from "@chakra-ui/react";
 import bg from "../Assests/background1.png";
 import Card2 from "../Components/Team/Card2";
 import Header from "../Components/Header/Header";
+import Teamgif from "../Assests/TeamHeader.gif";
 
 const Team = ({ name, img, designation, linkedin, twitter }) => {
   return (
@@ -64,7 +65,7 @@ export default function Teams() {
     <>
       {/* <Teamquote /> */}
       <Header
-        gif = "https://embed.lottiefiles.com/animation/94021"
+        gif = {Teamgif}
         text='Meet Our Team'
       />
 
