@@ -32,6 +32,8 @@ export default function Aboutwpu() {
           rounded={{
             lg: "lg",
           }}
+        border="1px solid"
+
         >
           <Box
             w={{

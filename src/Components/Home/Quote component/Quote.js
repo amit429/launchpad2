@@ -85,29 +85,29 @@ export default function Quote() {
   const quotes = [
     {
       quote:
-        "Don't take rest after your first victory because if you fail in second, more lips are waiting to say that your first victory was just luck.",
-      name: "A.P.J. Abdul Kalam",
-      title: "Former President of India",
+        "Having a passion for solving a big problem and leaving a huge impact. Once you have that, everything else falls into place.",
+      name: "Ritesh Agarwal",
+      title: "Founder of Oyo",
       bg: "orange.300",
-      src: "https://i.imgur.com/LKDPlDA.jpg",
+      src: "https://firebasestorage.googleapis.com/v0/b/launchpad-startups.appspot.com/o/ritesh-agarwal.jpg?alt=media&token=20a9a43f-54d7-4801-bbe9-70bb06defc54",
     },
 
     {
       quote:
-        "Vision without action is merely a dream; action without vision is merely passing time; but vision and action together can change the world. ",
-      name: "Sudha Murthy",
-      title: "Chairperson of Infosys Foundation",
+        "All of us have an entrepreneur in us. Entrepreneurs are not driven by fear; they are driven by the idea to create impact.",
+      name: "Bhavish Aggarwal",
+      title: "Founder of Ola",
       bg: "white",
-      src: "https://i.imgur.com/8WLf4v0.jpg",
+      src: "https://firebasestorage.googleapis.com/v0/b/launchpad-startups.appspot.com/o/bhavishaggarwal.jpg?alt=media&token=3cb3ecf1-fcbf-4cdf-b3e1-ae0e1a743d64",
     },
 
     {
       quote:
-        "Ups and downs in life are very important to keep us going because a straight line, even in an ECG. means we are not alive.",
-      name: "Ratan Tata",
-      title: "Chairman of Tata Group",
+        "If you fully accept the worst that can ever happen in your journey, fear won't ever be an obstacle in starting-up.",
+      name: "Kunal Shah",
+      title: "Founder of CRED",
       bg: "green.400",
-      src: "https://i.imgur.com/GyKdhsv.jpg",
+      src: "https://firebasestorage.googleapis.com/v0/b/launchpad-startups.appspot.com/o/Kunal_Shah.jpg?alt=media&token=24261315-76c7-455e-a4a6-6f81b611dc06",
     },
   ];
 

@@ -93,11 +93,12 @@ export default function Vision() {
                     color: "gray.400",
                   }}
                   fontSize={{
-                    md: "md",
+                    md: "lg",
                   }}
                 >
-                  Built for Bharat is a term that refers to startups that are focused on creating solutions and products for the masses in India, particularly those who live in smaller towns and rural areas. Bharat, in this context, represents the non-urban areas of India. The startups who recognize that there is a huge untapped market in these areas and are creating innovative products and services that cater to the unique needs of people living in these areas. 
-                  Startups who are working on solving a wide range of challenges faced by people living in rural areas, including access to education, healthcare, financial services, and e-commerce. For example, they are creating mobile apps that allow farmers to connect with buyers directly, digital platforms that provide access to affordable healthcare services, and innovative financial products that cater to the needs of people living in remote areas.
+                  The phrase "built for Bharat" refers to startups that are committed to developing services and goods for the general public in India, especially those who reside in smaller towns and rural areas. For instance, they are developing digital platforms that give people access to affordable healthcare services and mobile apps that connect farmers with buyers directly. 
+We seek grassroots innovations and startups.
+
                 </chakra.p>
                 <Button
                   w={{
@@ -132,11 +133,11 @@ export default function Vision() {
               variants={R2LAnimate}
             >
               <Box
-                w="full"
-                h="full"
+                // w="full"
+                h={"50"}
                 py={48}
                 bg="gray.200"
-                bgImage={"https://i.imgur.com/IgXb9b8.jpg"}
+                bgImage={"https://firebasestorage.googleapis.com/v0/b/launchpad-startups.appspot.com/o/built_for_bharat.jpg?alt=media&token=a4f078bf-43f6-4b21-a2a4-dfd53d4793e2"}
                 bgSize={{ base: "cover", md: "cover" }}
                 bgPosition={{ base: "center", md: "center" }}
               >
@@ -204,11 +205,10 @@ export default function Vision() {
                     color: "gray.400",
                   }}
                   fontSize={{
-                    md: "md",
+                    md: "lg",
                   }}
                 >
-                  Startups for a better tomorrow for Bharat is a concept that refers to startups that are dedicated to promoting social, economic, and environmental sustainability in India. These startups are committed to creating solutions that are inclusive, accessible, and affordable for all people in the country, including those who are marginalized or underprivileged.
-                  The focus on inclusivity is driven by a belief that everyone should have access to the benefits of technological innovation, and that startups have a critical role to play in driving positive change in the country. Inclusive startups are working on solving a wide range of challenges faced by the society, including but not limited to education, healthcare, energy, water, sanitation, agriculture, and financial services.
+                  Startups for a Better Tomorrow for Bharat is a concept that describes startups that are committed to advancing social, economic, and environmental sustainability in India. These startups are dedicated to developing solutions that are inclusive, reachable, and affordable for everyone in the nation, including the poor and the disadvantaged. The emphasis on inclusivity stems from the conviction that everyone should be able to take advantage of technological advancements including but not limited to education, healthcare, energy, water, sanitation, agriculture, and financial services.
 
                 </chakra.p>
                 <Button
@@ -244,7 +244,7 @@ export default function Vision() {
                 h="full"
                 py={48}
                 bg="gray.200"
-                bgImage={"https://i.imgur.com/I6trlqd.png"}
+                bgImage={"https://firebasestorage.googleapis.com/v0/b/launchpad-startups.appspot.com/o/our_vision.jpg?alt=media&token=18be497b-7fcc-476f-8ff5-f8fbe4da64cd"}
                 bgSize="cover"
                 bgPosition="center"
               ></Box>

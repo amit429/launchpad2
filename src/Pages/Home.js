@@ -17,10 +17,10 @@ const Home = () => {
         gif={Homegif}
         text="Meet Startups"
       />
-      <Quote />
       <Aboutwpu />
       <Goals />
       <Vision />
+      <Quote />
     </>
   );
 };

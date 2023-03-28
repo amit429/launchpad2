@@ -63,37 +63,37 @@ export default function Goals() {
 
   const features = [
     {
-      title: 'Lifetime Support',
+      title: 'Bharat First',
       text: "Bharat First Approach for Startups is about creating solutions that are both innovative and relevant to the unique needs of the Indian market. ",
       icon: <Icon as={FcProcess} w={10} h={10} />,
     },
 
     {
-      title: 'Unlimited Donations',
-      text: "Transforming Businesses through the Power of People, Technology and Innovation",
+      title: 'Tech Mentorship',
+      text: "Transforming Businesses through the Power of People, Technology, and Innovation, providing resources and support to help entrepreneurs succeed.",
       icon: <Icon as={FcWorkflow} w={10} h={10} />,
     },
 
     {
-      title: 'In Transit',
+      title: 'Expand and Grow',
       text: "Enabling startups to improve their business strategy, organization and to be successful and raise capital for expansion & growth",
       icon: <Icon as={FcPositiveDynamic} w={10} h={10} />,
     },
 
     {
-      title: 'Lifetime Support',
+      title: 'Empowering Grassroot Innovators',
       text: "Promoting entrepreneurship and innovation that generates employment opportunities and drives growth in rural and underdeveloped areas of India",
       icon: <Icon as={FcProcess} w={10} h={10} />,
     },
 
     {
-      title: 'Unlimited Donations',
+      title: 'Sustainability',
       text: "Focus is on leveraging technology to create innovative solutions that are not only accessible and affordable but also sustainable. ",
       icon: <Icon as={FcWorkflow} w={10} h={10} />,
     },
 
     {
-      title: 'In Transit',
+      title: 'Resources and Support',
       text: "Launchpad Startups aims to provide resources and support to help entrepreneurs succeed.",
       icon: <Icon as={FcPositiveDynamic} w={10} h={10} />,
     }
@@ -113,6 +113,7 @@ export default function Goals() {
         <SimpleGrid columns={[1, 2, 3]} spacing='30px'>
           {features.map((feature) => (
             <Feature
+              title={feature.title}
               icon={feature.icon}
               text={feature.text}
             />

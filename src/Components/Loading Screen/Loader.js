@@ -40,7 +40,7 @@ export default function Loader() {
         <Box className='typewriter'>
             <Typewriter
             options={{
-                strings: ["Launchpad is the Home to Billion Dollar Ideas 🏆"],
+                strings: ["Launchpad is the home to Billion Dollar Ideas! 🏆"],
                 autoStart: true,
                 delay: 40,
                 pauseFor: 0,
