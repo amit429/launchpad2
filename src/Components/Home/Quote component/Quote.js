@@ -85,7 +85,7 @@ export default function Quote() {
   const quotes = [
     {
       quote:
-        "It is extremely important to build something that a 100 people absolutely love using rather than make something that a 1000 people would just, kind of, like.",
+        "Having a passion for solving a big problem and leaving a huge impact. Once you have that, everything else falls into place.",
       name: "Ritesh Agarwal",
       title: "Founder of OYO",
       bg: "orange.300",
@@ -94,7 +94,7 @@ export default function Quote() {
 
     {
       quote:
-        "Entrepreneurs are not driven by fear; they are driven by the idea to create impact. ",
+        "All of us have an entrepreneur in us. Entrepreneurs are not driven by fear; they are driven by the idea to create impact.",
       name: "Bhavish Aggarwal",
       title: "Founder of Ola",
       bg: "white",
