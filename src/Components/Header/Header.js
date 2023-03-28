@@ -75,18 +75,17 @@ export default function Header(props) {
                 LaunchPad
               </Text>
               <br />{" "}
-              <Text color={"blue.900"} as={"span"}>
+              {/* <Text color={"blue.900"} as={"span"}>
                 {props.text}
-              </Text>{" "}
+              </Text> */}
+              {" "}
             </Heading>
             <Text fontSize={{ base: "md", lg: "md" }} color={"gray.500"}
               textAlign={{ base: "center", md: "left" }}
             >
-              LaunchPad is a platform for startups to connect with investors and
-              other startups. We provide a platform for startups to showcase
-              their ideas and get feedback from the community. We also provide a
-              platform for investors to connect with startups and invest in
-              them.
+              A platform that acts as a bridge connecting startups to investors and vice versa, allowing the startups to present their idea and purpose to the community. 
+Launchpad startups believe in building the future by promoting entrepreneurs of India. 
+
             </Text>
           </Stack>
         </Flex>

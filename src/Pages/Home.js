@@ -16,10 +16,10 @@ const Home = () => {
         gif="https://embed.lottiefiles.com/animation/94515"
         text="Meet Startups"
       />
-      <Quote />
       <Aboutwpu />
       <Goals />
       <Vision />
+      <Quote />
     </>
   );
 };
