@@ -87,7 +87,7 @@ export default function Quote() {
       quote:
         "Having a passion for solving a big problem and leaving a huge impact. Once you have that, everything else falls into place.",
       name: "Ritesh Agarwal",
-      title: "Founder of OYO",
+      title: "Founder of Oyo",
       bg: "orange.300",
       src: "https://firebasestorage.googleapis.com/v0/b/launchpad-startups.appspot.com/o/ritesh-agarwal.jpg?alt=media&token=20a9a43f-54d7-4801-bbe9-70bb06defc54",
     },
@@ -107,7 +107,7 @@ export default function Quote() {
       name: "Kunal Shah",
       title: "Founder of CRED",
       bg: "green.400",
-      src: "https://firebasestorage.googleapis.com/v0/b/launchpad-startups.appspot.com/o/kunalshah.jpg?alt=media&token=72d32473-67dd-45fb-882c-ae1834d339eb",
+      src: "https://firebasestorage.googleapis.com/v0/b/launchpad-startups.appspot.com/o/Kunal_Shah.jpg?alt=media&token=24261315-76c7-455e-a4a6-6f81b611dc06",
     },
   ];
 
