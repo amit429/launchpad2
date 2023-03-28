@@ -8,12 +8,13 @@ import Goals from "../Components/Home/Goals/Goals";
 import Vision from "../Components/Home/Vision/Vision";
 import { Parallax } from "react-scroll-parallax";
 import Header from "../Components/Header/Header";
+import Homegif from "../Assests/HomeHeader.gif";
 
 const Home = () => {
   return (
     <>
       <Header
-        gif="https://embed.lottiefiles.com/animation/94515"
+        gif={Homegif}
         text="Meet Startups"
       />
       <Aboutwpu />

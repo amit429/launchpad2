@@ -5,6 +5,7 @@ import Demo from "../Assests/demo.jpg";
 import { Box, Heading, SimpleGrid } from "@chakra-ui/react";
 import bg from "../Assests/background1.png";
 import Header from "../Components/Header/Header";
+import Resourcesgif from "../Assests/ResourcesHeader.gif";
 
 const Resource = ({ img, type, title, description }) => {
   return (
@@ -65,7 +66,7 @@ export default function Resources() {
   return (
     <>
       <Header
-        gif="https://embed.lottiefiles.com/animation/98297"
+        gif={Resourcesgif}
         text="Our Resources"
       />
       <Box
