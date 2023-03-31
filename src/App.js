@@ -12,6 +12,7 @@ import About from './Pages/About';
 import Resources from './Pages/Resources';
 import Contact from './Pages/Contact';
 import Teams from './Pages/Team';
+import BlogPage from './Pages/BlogPage';
 import { launchPadTheme } from './Styles/theme';
 
 
@@ -52,6 +53,7 @@ else {
               <Route path="/resources" element={<Resources/>} />
               <Route path="/contact" element={<Contact/>} />
               <Route path="/team" element={<Teams/>} />
+              <Route path="/blogpage" element={<BlogPage/>} />
             </Routes>
           <Footer/>
         </Router>
