@@ -1,7 +1,6 @@
-import { Heading } from "@chakra-ui/react";
 import React from "react";
-import { Box, Button, chakra, Flex, SimpleGrid, Image } from "@chakra-ui/react";
-import { motion, Variants } from "framer-motion";
+import { Box, chakra, Flex, SimpleGrid, Image } from "@chakra-ui/react";
+import { motion} from "framer-motion";
 
 const L2RAnimate = {
     offscreen: { x: -100, opacity: 0 },
@@ -132,7 +131,7 @@ export default function Visionary() {
                             initial={'offscreen'}
                             whileInView={'onscreen'}
                             viewport={{ once: true, amount: 0.5 }}
-                            variants={R2LAnimate}
+                            variants={L2RAnimate}
                         >
                             <Image src="https://static.wixstatic.com/media/5b36a0_0f1fedcf70b54db986b5f9f85ff3b491~mv2.webp" alt="Motivation" 
                             h={{ base: "300px", md: "320px" }}
@@ -142,7 +141,7 @@ export default function Visionary() {
                             initial={'offscreen'}
                             whileInView={'onscreen'}
                             viewport={{ once: true, amount: 0.5 }}
-                            variants={L2RAnimate}
+                            variants={R2LAnimate}
                         >
                             <Box>
                                 <chakra.h2
