@@ -104,7 +104,7 @@ export default function Visionary() {
                         >
                             <Image src="https://static.wixstatic.com/media/b160bc_f4df754e05844132b90a810feaa01d0c~mv2.png/v1/crop/x_0,y_0,w_400,h_392/fill/w_421,h_391,fp_0.50_0.50,lg_1,q_85,enc_auto/rahul_karad_sir.png" alt="Visionary" 
                             h={{ base: "300px", md: "320px" }}
-                            ml={{ base: "0", md: "2%", lg:"30%" }}
+                            pl={{ base: "0", md: "10%", lg:"30%" }}
                             mt={{ base: "0", md: "20%", lg:"0%" }}
                             />
                         </motion.div>
@@ -125,7 +125,7 @@ export default function Visionary() {
                             base: 10,
                             md: "1%",
                         }}
-                        mt={"10%"}
+                        mt={{base:"50%", md:"10%"}}
                     >
                         <motion.div
                             initial={'offscreen'}
@@ -135,6 +135,8 @@ export default function Visionary() {
                         >
                             <Image src="https://static.wixstatic.com/media/5b36a0_0f1fedcf70b54db986b5f9f85ff3b491~mv2.webp" alt="Motivation" 
                             h={{ base: "300px", md: "320px" }}
+                            pr={{ base: "0", md: "10%", lg:"0%" }}
+                            mt={{ base: "0", md: "80%", lg:"0%" }}
                             />
                         </motion.div>
                         <motion.div
