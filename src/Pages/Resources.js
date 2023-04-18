@@ -1,9 +1,7 @@
 import React from "react";
 import ResourcesCard from "../Components/Resources/ResourcesCard";
-import pf from "../Assests/pf.png";
-import Demo from "../Assests/demo.jpg";
 import { Box, Heading, SimpleGrid } from "@chakra-ui/react";
-import bg from "../Assests/background1.png";
+import bg from "../Assests/team_resources_PageBackground.png";
 import Header from "../Components/Header/Header";
 import Resourcesgif from "../Assests/ResourcesHeader.gif";
 

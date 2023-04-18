@@ -40,7 +40,7 @@ export default function Card2(props) {
           bgSize='cover'
           animation={'background-gradient 5s'}
           _hover={{
-            bgGradient: "linear(to-b, orange,white,green)",
+            bgGradient: "linear(to-b, orange,white,green.100)",
             boxShadow: '2xl',
             cursor: 'pointer',
             // bgImage: bg
