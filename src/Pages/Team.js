@@ -1,7 +1,7 @@
 import React from "react";
 import Pfcard from "../Components/Team/Card";
-import Teamquote from "../Components/Team/Teamquote";
-import { SimpleGrid, Box, Stack, Heading } from "@chakra-ui/react";
+// import Teamquote from "../Components/Team/Teamquote";
+import { SimpleGrid, Box, Heading } from "@chakra-ui/react";
 import bg from "../Assests/team_resources_PageBackground.png";
 import GuidingForceCard from "../Components/Team/GuidingForceCard";
 import Header from "../Components/Header/Header";

@@ -1,6 +1,5 @@
 import React from "react";
-import { Box, Flex, Image, Text, HStack , Center , Stack , Button} from "@chakra-ui/react";
-import { FaSuitcase, FaMapPin, FaEnvelope} from "react-icons/fa";
+import { Box, Flex, Image, Text , Center , Stack , Button} from "@chakra-ui/react";
 import { SiLinkedin} from 'react-icons/si';
 import { motion } from 'framer-motion'
 
