@@ -1,11 +1,9 @@
 import React from "react";
 import Pfcard from "../Components/Team/Card";
-import pf from "../Assests/pf.png";
-import Demo from "../Assests/demo.jpg";
-import Teamquote from "../Components/Team/Teamquote";
-import { SimpleGrid, Box, Stack, Heading } from "@chakra-ui/react";
-import bg from "../Assests/background1.png";
-import Card2 from "../Components/Team/Card2";
+// import Teamquote from "../Components/Team/Teamquote";
+import { SimpleGrid, Box, Heading } from "@chakra-ui/react";
+import bg from "../Assests/team_resources_PageBackground.png";
+import GuidingForceCard from "../Components/Team/GuidingForceCard";
 import Header from "../Components/Header/Header";
 import Teamgif from "../Assests/TeamHeader.gif";
 
@@ -93,7 +91,7 @@ export default function Teams() {
           alignItems="center"
           margin={"auto"}
         >
-          <Card2 />
+          <GuidingForceCard />
         </Box>
 
         <Heading

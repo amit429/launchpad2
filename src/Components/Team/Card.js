@@ -1,31 +1,18 @@
 import {
-  Heading,
-  Avatar,
   Box,
   Center,
   Text,
   Stack,
   Button,
-  Link,
-  Badge,
-  useColorModeValue,
-  keyframes,
-  ScaleFade,
-  SimpleGrid,
   Flex,
   Image,
   HStack,
-  VStack,
 } from "@chakra-ui/react";
-import { SiLinkedin, SiTwitter } from "react-icons/si";
-import { FaSuitcase, FaMapPin, FaEnvelope } from "react-icons/fa";
+import { SiLinkedin } from "react-icons/si";
 import { motion } from "framer-motion";
-import bg from "../../Assests/team.gif";
-import { useInViewport } from "react-in-viewport";
-import React, { useRef } from "react";
+import React from "react";
 
 export default function Pfcard(props) {
-  const ref = useRef(null);
   
   return (
     <Flex
